@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ProjetoPDVServico.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ProjetoPDVServico_NFCeAutorizacaoH_NfeAutorizacao" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://nfce-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao.asmx</Value>
+    </Setting>
+    <Setting Name="ProjetoPDVServico_NFCeAutorizacaoP_NfeAutorizacao" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://nfce.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao.asmx</Value>
+    </Setting>
+    <Setting Name="ProjetoPDVServico_NFCeInutilizacao2H_NfeInutilizacao2" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://nfce-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao2.asmx</Value>
+    </Setting>
+    <Setting Name="ProjetoPDVServico_NFCeInutilizacao2P_NfeInutilizacao2" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://nfce.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao2.asmx</Value>
+    </Setting>
+    <Setting Name="ProjetoPDVServico_NFCeRecepcaoEventoH_RecepcaoEvento" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://nfce-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento.asmx</Value>
+    </Setting>
+    <Setting Name="ProjetoPDVServico_NFCeRecepcaoEventoP_RecepcaoEvento" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://nfce.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento.asmx</Value>
+    </Setting>
+    <Setting Name="ProjetoPDVServico_NFCeAutorizacao4H_NFeAutorizacao4" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://nfce-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx</Value>
+    </Setting>
+    <Setting Name="ProjetoPDVServico_NFCeInutilizacao4H_NFeInutilizacao4" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://nfce-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx</Value>
+    </Setting>
+    <Setting Name="ProjetoPDVServico_NFCeRecepcaoEvento4H_NFeRecepcaoEvento4" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://nfce-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx</Value>
+    </Setting>
+    <Setting Name="ProjetoPDVServico_NFCeAutorizacao4P_NFeAutorizacao4" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://nfce.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx</Value>
+    </Setting>
+    <Setting Name="ProjetoPDVServico_NFCeInutilizacao4P_NFeInutilizacao4" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://nfce.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx</Value>
+    </Setting>
+    <Setting Name="ProjetoPDVServico_NFCeRecepcaoEvento4P_NFeRecepcaoEvento4" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://nfce.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
