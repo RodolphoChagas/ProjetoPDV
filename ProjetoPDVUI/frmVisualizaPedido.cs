@@ -56,6 +56,8 @@ namespace ProjetoPDVUI
             lblCartaoCredito.Text = totalCredito.ToString("0.00");
             lblCartaoDebito.Text = totalDebito.ToString("0.00");
             lblOutros.Text = totalOutros.ToString("0.00");
+
+            lblObservacao.Text = "Observação: " + _pedido.Pagamentos[0].Observacao; 
         }
 
         private void ListaProdutos()

@@ -279,8 +279,8 @@ namespace ProjetoPDVUI
                 //    quantidadeTotal -= quantidadeItem;
                 //}
 
-                valorTotal += valor;
-                quantidadeTotal += quantidadeItem;
+                valorTotal = valorTotal + (valor);
+                quantidadeTotal = quantidadeTotal + (quantidadeItem);
 
                 lblTotalVenda.Text = valorTotal.ToString("0.00");
                 lblTotalItens.Text = quantidadeTotal.ToString();

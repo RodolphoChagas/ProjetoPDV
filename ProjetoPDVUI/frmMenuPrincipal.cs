@@ -27,7 +27,7 @@ namespace ProjetoPDVUI
         private void frmMenuPrincipal_Load(object sender, EventArgs e)
         {
 
-            this.Text = "Menu Principal (NFCe 3.10)";
+            this.Text = "Menu Principal (NFCe 4.00)";
 
             try
             {

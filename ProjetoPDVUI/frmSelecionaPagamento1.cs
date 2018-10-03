@@ -135,8 +135,8 @@ namespace ProjetoPDVUI
                 return;
             }
 
-            if ((MessageBox.Show("Confirma finalizar o pagamento ?", "Mensagem", MessageBoxButtons.YesNo, MessageBoxIcon.Information)) == DialogResult.No)
-                return;
+            //if ((MessageBox.Show("Confirma finalizar o pagamento ?", "Mensagem", MessageBoxButtons.YesNo, MessageBoxIcon.Information)) == DialogResult.No)
+            //    return;
 
 
             InicializaCliente();
@@ -211,7 +211,7 @@ namespace ProjetoPDVUI
                             throw new Exception("Houve um erro inesperado ao se comunicar com a IMPRESSOSA BEMATECH, verifique-a por favor!");
 
 
-                        MessageBox.Show("NFC-e emitida com sucesso!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("NFC-e emitida com sucesso!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch (Exception ex)
                     {
@@ -221,14 +221,13 @@ namespace ProjetoPDVUI
             }
             else
             {
-
                 try
                 {
                     if (!ImpressoraBematech.isImprimeComprovante(_pedido))
                         throw new Exception("Houve um erro inesperado ao se comunicar com a IMPRESSOSA BEMATECH, verifique-a por favor!");
 
 
-                    MessageBox.Show("Pedido Finalizado com sucesso!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("Pedido Finalizado com sucesso!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
@@ -459,7 +458,7 @@ namespace ProjetoPDVUI
                     urlQRCode = gerarXml.GetUrlQRCode(xmlNFCeAssinado, _pedido);
 
                     //Inserindo a URL QRCode no xml já assinado
-                    xmlNFCeAssinado.LoadXml(xmlNFCeAssinado.InnerXml.Replace("</infNFe>", "</infNFe><infNFeSupl><qrCode><![CDATA[" + urlQRCode + "]]></qrCode></infNFeSupl>"));
+                    xmlNFCeAssinado.LoadXml(xmlNFCeAssinado.InnerXml.Replace("</infNFe>", "</infNFe><infNFeSupl><qrCode><![CDATA[" + urlQRCode + "]]></qrCode><urlChave>http://www4.fazenda.rj.gov.br/consultaNFCe/QRCode</urlChave></infNFeSupl>"));
                 }
                 catch (Exception ex)
                 {
@@ -477,7 +476,7 @@ namespace ProjetoPDVUI
                         //MensagemSistema("Enviando a NFC-e", Color.OliveDrab);
 
                         // Recebendo o XML de retorno da transmissão
-                        retTransmitir = transmitirXml.XML_NFCe(xmlNFCeAssinado, _pedido.NFiscal.ToString(), CertificadoDigital.getInstance.oCertificado);
+                        retTransmitir = transmitirXml.XML_NFCe4(xmlNFCeAssinado, _pedido.NFiscal.ToString(), CertificadoDigital.getInstance.oCertificado);
 
                         if (retTransmitir.Substring(0, 4) != "Erro")
                         {
@@ -504,7 +503,7 @@ namespace ProjetoPDVUI
 
 
                                         // XML pronto para salvar
-                                        strXmlProcNfe = @"<?xml version=""1.0"" encoding=""utf-8"" ?><nfeProc xmlns=""http://www.portalfiscal.inf.br/nfe"" versao=""3.10"">" + xmlNFCeAssinado.InnerXml + strProc + "</nfeProc>";
+                                        strXmlProcNfe = @"<?xml version=""1.0"" encoding=""utf-8"" ?><nfeProc xmlns=""http://www.portalfiscal.inf.br/nfe"" versao=""4.00"">" + xmlNFCeAssinado.InnerXml + strProc + "</nfeProc>";
 
                                         _pedido.Xml = new Xml()
                                         {

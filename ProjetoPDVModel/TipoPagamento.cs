@@ -26,7 +26,7 @@ namespace ProjetoPDVModel
         public decimal ValorPago { get; set; }
         [Ignore]
         public string NumeroDeAutorizacaoDoCartao { get; set; }
-        [Ignore]
+        //[Ignore]
         public string Observacao { get; set; }
 
         public TipoPagamento()

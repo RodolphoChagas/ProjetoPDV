@@ -38,7 +38,7 @@ namespace ProjetoPDVDao
         {
             try
             {
-                return (new PetaPoco.Database("stringConexao")).Query<TipoPagamento>("SELECT p.*, valor as valorPago FROM Movdb_Pagamento_Rel m INNER JOIN TipoPagamento p ON m.pagamento_id = p.id WHERE NumDoc=@0", numDoc).ToList();
+                return (new PetaPoco.Database("stringConexao")).Query<TipoPagamento>("SELECT p.*, valor as valorPago, observacao FROM Movdb_Pagamento_Rel m INNER JOIN TipoPagamento p ON m.pagamento_id = p.id WHERE NumDoc=@0", numDoc).ToList();
             }
             catch (Exception)
             {

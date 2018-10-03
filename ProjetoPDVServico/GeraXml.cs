@@ -90,23 +90,40 @@ namespace ProjetoPDVServico
                 if (_AmbienteNFCe == "2")
                     token = ControleFiscal.GetInstance.TokenHomologacao;
 
-                urlNfCe += "chNFe=" + _chaveNFCe;
-                urlNfCe += "&nVersao=" + "100";
-                urlNfCe += "&tpAmb=" + _AmbienteNFCe;
+                //urlNfCe += "chNFe=" + _chaveNFCe;
+                urlNfCe += "p=";
 
-                if (pedido.Cliente.Nome.Trim() != "CONSUMIDOR NÃO IDENTIFICADO")
-                {
-                    urlNfCe += "&cDest=";
-                    urlNfCe += pedido.Cliente.CnpjCpf;
-                }
 
-                urlNfCe += "&dhEmi=" + BitConverter.ToString(Encoding.Default.GetBytes(xmlAssinado.GetElementsByTagName("dhEmi")[0].InnerText)).Replace("-", "");
-                urlNfCe += "&vNF=" + xmlAssinado.GetElementsByTagName("vNF")[0].InnerText;
-                //url_NFCe += "&vICMS=" + "0.00";
-                urlNfCe += "&vICMS=" + vICMS.ToString("0.00").Replace(",", ".");
-                urlNfCe += "&digVal=" + BitConverter.ToString(Encoding.Default.GetBytes(xmlAssinado.GetElementsByTagName("DigestValue")[0].InnerText)).Replace("-", "");
-                urlNfCe += "&cIdToken=" + "000001";
-                urlNfCe += "&cHashQRCode=" + GetSha1(urlNfCe + token).ToUpper();
+                ;// urlNfCe += "&nVersao=" + "100";
+                var versaoQrCode = "|" + "2";
+
+                //urlNfCe += "&tpAmb=" + _AmbienteNFCe;
+                var ambiente = "|" + _AmbienteNFCe;
+
+                //if (pedido.Cliente.Nome.Trim() != "CONSUMIDOR NÃO IDENTIFICADO")
+                //{
+                //    urlNfCe += "&cDest=";
+                //    urlNfCe += pedido.Cliente.CnpjCpf;
+                //}
+
+                //urlNfCe += "&dhEmi=" + BitConverter.ToString(Encoding.Default.GetBytes(xmlAssinado.GetElementsByTagName("dhEmi")[0].InnerText)).Replace("-", "");
+                //urlNfCe += "&vNF=" + xmlAssinado.GetElementsByTagName("vNF")[0].InnerText;
+                ////url_NFCe += "&vICMS=" + "0.00";
+                //urlNfCe += "&vICMS=" + vICMS.ToString("0.00").Replace(",", ".");
+                //urlNfCe += "&digVal=" + BitConverter.ToString(Encoding.Default.GetBytes(xmlAssinado.GetElementsByTagName("DigestValue")[0].InnerText)).Replace("-", "");
+                //urlNfCe += "&cIdToken=" + "000001";
+                //urlNfCe += "&cHashQRCode=" + GetSha1(urlNfCe + token).ToUpper();
+
+                var idToken = "|" + "1";
+
+                var qrCode = _chaveNFCe + versaoQrCode + ambiente + idToken;
+
+                var qrCode_CSC = qrCode + token;
+
+                var SHA1 = GetSha1(qrCode_CSC).ToUpper();
+
+                urlNfCe += qrCode + "|" + SHA1;
+
             }
             catch (Exception)
             {
@@ -137,7 +154,7 @@ namespace ProjetoPDVServico
             var x = new StringBuilder();
 
             x.Append(@"<?xml version=""1.0"" encoding=""utf-8""?>");
-            x.Append(@"<enviNFe xmlns=""http://www.portalfiscal.inf.br/nfe"" versao=""3.10"">");
+            x.Append(@"<enviNFe xmlns=""http://www.portalfiscal.inf.br/nfe"" versao=""4.00"">");
             //x.Append("<idLote>" + nfiscal.ToString("000000000000000") + "</idLote>");
             x.Append("<idLote>" + $@"{Convert.ToInt32(nfiscal):000000000000000}" + "</idLote>");
             x.Append("<indSinc>1</indSinc>");
@@ -293,23 +310,24 @@ namespace ProjetoPDVServico
         {
             XmlNode pag = xml.CreateElement("pag");
 
-            
 
-            //foreach (TipoPagamento pagamento in p.Pagamentos)
-            //{
-            //    XmlNode detPag = xml.CreateElement("detPag");
-            //    pag.AppendChild(detPag);
 
-            //    //pag.AppendChild(elemento(xml, "tPag", p.tipoPgto.codFormaPgtoNFCe.ToString("00")));
-            //    detPag.AppendChild(elemento(xml, "tPag", pagamento.CodigoNFCe.ToString("00")));
-            //    detPag.AppendChild(elemento(xml, "vPag", pagamento.ValorPago.ToString("######0.00").Replace(",", ".")));
-            //}
+            foreach (TipoPagamento pagamento in p.Pagamentos)
+            {
+                XmlNode detPag = xml.CreateElement("detPag");
+                pag.AppendChild(detPag);
 
-            pag.AppendChild(elemento(xml, "tPag", "01"));
-            pag.AppendChild(elemento(xml, "vPag", p.ValorPedido.ToString("######0.00").Replace(",", ".")));
+                detPag.AppendChild(elemento(xml, "indPag", p.Operacao.TV.ToString().Trim()));
+                //pag.AppendChild(elemento(xml, "tPag", p.tipoPgto.codFormaPgtoNFCe.ToString("00")));
+                detPag.AppendChild(elemento(xml, "tPag", pagamento.CodigoNFCe.ToString("00")));
+                detPag.AppendChild(elemento(xml, "vPag", pagamento.ValorPago.ToString("######0.00").Replace(",", ".")));
+            }
 
-            //if (p.Troco > 0)
-            //    pag.AppendChild(elemento(xml, "vTroco", p.Troco.ToString("00")));
+            //pag.AppendChild(elemento(xml, "tPag", "01"));
+            //pag.AppendChild(elemento(xml, "vPag", p.ValorPedido.ToString("######0.00").Replace(",", ".")));
+
+            if (p.Troco > 0)
+                pag.AppendChild(elemento(xml, "vTroco", p.Troco.ToString("00")));
 
             raiz.AppendChild(pag);
         }
@@ -320,7 +338,8 @@ namespace ProjetoPDVServico
         {
             XmlNode nfeProc = xml.CreateElement("nfeProc");
             nfeProc.Attributes.Append(atributo(xml, "xmlns", "http://www.portalfiscal.inf.br/nfe"));
-            nfeProc.Attributes.Append(atributo(xml, "versao", "3.10"));
+            //nfeProc.Attributes.Append(atributo(xml, "versao", "3.10"));
+            nfeProc.Attributes.Append(atributo(xml, "versao", "4.0"));
 
             return nfeProc;
         }
@@ -367,7 +386,7 @@ namespace ProjetoPDVServico
 
             XmlNode infNFe = xml.CreateElement("infNFe");
             infNFe.Attributes.Append(atributo(xml, "Id", "NFe" + _chaveNFCe));
-            infNFe.Attributes.Append(atributo(xml, "versao", "3.10"));
+            infNFe.Attributes.Append(atributo(xml, "versao", "4.00"));
 
             return infNFe;
         }
@@ -381,7 +400,8 @@ namespace ProjetoPDVServico
 
             ide.AppendChild(elemento(xml, "cNF", cNF));
             ide.AppendChild(elemento(xml, "natOp", p.Operacao.DescFiscal.Trim()));
-            ide.AppendChild(elemento(xml, "indPag", p.Operacao.TV.ToString().Trim()));
+            //O campo foi reposicionado na versão 4.0. Agora os dados de pagamento são obrigatórios para NFe e NFCe e se encontram no grupo pag
+            //ide.AppendChild(elemento(xml, "indPag", p.Operacao.TV.ToString().Trim()));
             ide.AppendChild(elemento(xml, "mod", p.ModeloNFiscal));
 
             //Contingencia -----------------------------------------
@@ -541,7 +561,7 @@ namespace ProjetoPDVServico
 
                 XmlNode prod = xml.CreateElement("prod");
                 prod.AppendChild(elemento(xml, "cProd", pedidoitem.Produto.ProdutoId.ToString()));
-                prod.AppendChild(elemento(xml, "cEAN", ""));
+                prod.AppendChild(elemento(xml, "cEAN", "SEM GTIN"));
 
 
                 if (_AmbienteNFCe == "2")
@@ -558,7 +578,7 @@ namespace ProjetoPDVServico
                 //prod.AppendChild(elemento(xml, "NCM", "49019900"));
                 prod.AppendChild(elemento(xml, "NCM", pedidoitem.Produto.GrupoFiscal.Ncm));
 
-                if (pedidoitem.Produto.GrupoFiscal.ST.Equals(1) && pedidoitem.Produto.GrupoFiscal.Cest.Trim().Length > 1)
+                if (pedidoitem.Produto.GrupoFiscal.CSOSN == "500" || (pedidoitem.Produto.GrupoFiscal.ST.Equals(1) && pedidoitem.Produto.GrupoFiscal.Cest.Trim().Length > 1))
                     prod.AppendChild(elemento(xml, "CEST", pedidoitem.Produto.GrupoFiscal.Cest));
 
 
@@ -583,8 +603,10 @@ namespace ProjetoPDVServico
                 prod.AppendChild(elemento(xml, "vUnCom", pedidoitem.ValorOriginalItem.ToString("####0.0000").Replace(",", ".")));
                 prod.AppendChild(elemento(xml, "vProd", (pedidoitem.ValorOriginalItem * pedidoitem.Quantidade).ToString("####0.00").Replace(",", ".")));
 
-                XmlNode cEANTrib = xml.CreateElement("cEANTrib");
-                prod.AppendChild(cEANTrib);
+                //Agora informando o codigo GTIN(código de barras) - inserido na versao 4.0
+                prod.AppendChild(elemento(xml, "cEANTrib", "SEM GTIN"));
+
+
                 prod.AppendChild(elemento(xml, "uTrib", "Ex"));
                 prod.AppendChild(elemento(xml, "qTrib", prod.SelectSingleNode("qCom").InnerText));
                 prod.AppendChild(elemento(xml, "vUnTrib", prod.SelectSingleNode("vUnCom").InnerText));
@@ -747,10 +769,20 @@ namespace ProjetoPDVServico
             ICMSTot.AppendChild(elemento(xml, "vFCPUFDest", "0.00"));
             ICMSTot.AppendChild(elemento(xml, "vICMSUFDest", "0.00"));
 
+            //Valor Total do FCP (Fundo de Combate à Pobreza) retido por substituição tributária - inserido na 4.0
+            ICMSTot.AppendChild(elemento(xml, "vFCP", "0.00"));
+            //---------------------------------------------------
+
+
             ICMSTot.AppendChild(elemento(xml, "vBCST", "0.00"));
             //ICMSTot.AppendChild(elemento(xml, "vICMSUFRemet", "0.00"));
             ICMSTot.AppendChild(elemento(xml, "vST", "0.00"));
             //ICMSTot.AppendChild(elemento(xml, "vFCP", "0.00"));
+
+            //Valor Total do FCP (Fundo de Combate à Pobreza) retido por substituição tributária - inserido na 4.0
+            ICMSTot.AppendChild(elemento(xml, "vFCPST", "0.00"));
+            //Valor Total do FCP retido anteriormente por Substituição Tributária - inserido na 4.0
+            ICMSTot.AppendChild(elemento(xml, "vFCPSTRet", "0.00"));
 
 
             ICMSTot.AppendChild(elemento(xml, "vProd", p.SubTotal.ToString("######0.00").Replace(",", ".")));
@@ -766,6 +798,11 @@ namespace ProjetoPDVServico
 
             ICMSTot.AppendChild(elemento(xml, "vII", "0.00"));
             ICMSTot.AppendChild(elemento(xml, "vIPI", "0.00"));
+
+            //O campo foi adicionado no grupo de total da versão 4.0. Corresponde ao total da soma dos campos de vIPIDevol dos produtos. 
+            //É obrigatório, mesmo que zerado - inserido na 4.0
+            ICMSTot.AppendChild(elemento(xml, "vIPIDevol", "0.00"));
+
             ICMSTot.AppendChild(elemento(xml, "vPIS", vPIS.ToString("0.00").Replace(",", ".")));
             ICMSTot.AppendChild(elemento(xml, "vCOFINS", vCOFINS.ToString("0.00").Replace(",", ".")));
             ICMSTot.AppendChild(elemento(xml, "vOutro", "0.00"));

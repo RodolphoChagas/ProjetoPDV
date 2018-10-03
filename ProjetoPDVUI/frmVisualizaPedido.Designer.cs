@@ -54,6 +54,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.lblSair = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblObservacao = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,6 +65,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.lblObservacao);
             this.panel1.Controls.Add(this.lblPedido);
             this.panel1.Controls.Add(this.lblStatusCaixa);
             this.panel1.Location = new System.Drawing.Point(2, 2);
@@ -341,6 +343,17 @@
             this.pictureBox1.TabIndex = 220;
             this.pictureBox1.TabStop = false;
             // 
+            // lblObservacao
+            // 
+            this.lblObservacao.BackColor = System.Drawing.Color.Transparent;
+            this.lblObservacao.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblObservacao.ForeColor = System.Drawing.Color.White;
+            this.lblObservacao.Location = new System.Drawing.Point(11, 173);
+            this.lblObservacao.Name = "lblObservacao";
+            this.lblObservacao.Size = new System.Drawing.Size(200, 82);
+            this.lblObservacao.TabIndex = 2;
+            this.lblObservacao.Text = "Observacao:";
+            // 
             // frmVisualizaPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -393,5 +406,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblObservacao;
     }
 }

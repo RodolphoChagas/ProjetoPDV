@@ -21,81 +21,7 @@ namespace ProjetoTeste
             try
             {
 
-                using (var db = new Database("stringConexao"))
-                {
-                    db.BeginTransaction();
-
-                    try
-                    {
-                        db.Update("Update Movdb Set data_nfiscal = '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "' Where NumDoc = 64");
-
-                        db.CompleteTransaction();
-                    }
-                    catch (Exception)
-                    {
-                        db.AbortTransaction();
-                    }
-                }
-
-
-                return;
-
-                CertificadoDigital.getInstance.Seleciona_Certificado();
-
-
-
-                MP2032.ConfiguraModeloImpressora(7); // Bematech MP-4200 TH
-                MP2032.IniciaPorta("USB");
-
-
-
-                var codigoRetorno = MP2032.Le_Status();
-                if (codigoRetorno == 0)
-                {
-                    //MessageBox.Show("Erro ao se comunicar com a Impressora Bematech MP-4200 TH, verifique por favor.", "** ATENÇÃO **", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-                else if (codigoRetorno == 5)
-                {
-                    //MessageBox.Show("Impressora com pouco papel, verifique por favor.", "** ATENÇÃO **", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-                else if (codigoRetorno == 9)
-                {
-                    //MessageBox.Show("Impressora com a tampa aberta, verifique por favor.", "** ATENÇÃO **", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    MP2032.FechaPorta();
-                    return;
-                }
-                else if (codigoRetorno == 32)
-                {
-                    //MessageBox.Show("Impressora sem papel, verifique por favor.", "** ATENÇÃO **", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-
-
-
-
-                MP2032.BematechTX("\x1B\x61\x1"); //Centraliza
-
-                
-
-                //Informações do Cabeçalho
-                MP2032.FormataTX(Emitente.GetInstancia.Nome + "\n", 2, 0, 0, 0, 1);
-                //MP2032.FormataTX("CNPJ " + String.Format(@"{0:00\.000\.000\/0000\-00}", Convert.ToInt64(Emitente.getInstance.cnpj)) + "\n", 2, 0, 0, 0, 0);
-                MP2032.FormataTX("CNPJ " + $@"{Convert.ToInt64(Emitente.GetInstancia.Cnpj):00\.000\.000\/0000\-00}" + "\n", 2, 0, 0, 0, 0);
-                MP2032.FormataTX("Av. Amaral Peixoto, 507 - LJ05, Centro, Niterói-RJ" + "\n", 2, 0, 0, 0, 0);
-                MP2032.FormataTX("\n", 2, 0, 0, 0, 0);
-                MP2032.FormataTX("Documento Auxiliar da Nota Fiscal de Consumidor Eletronica" + "\n", 1, 0, 0, 0, 0);
-                MP2032.FormataTX("\n", 2, 0, 0, 0, 0);
-
-
-
-                //Corta o papel parcialmente
-                MP2032.AcionaGuilhotina(0);
-                MP2032.FechaPorta();
-
-
-
-                return;
-
-                GeraXml.AmbienteNFCe = "2";
+                GeraXml.AmbienteNFCe = "1";
 
                 CertificadoDigital.getInstance.Seleciona_Certificado();
                 (new EmitenteDao()).SelecionaEmitente();
@@ -112,84 +38,140 @@ namespace ProjetoTeste
                     control = null;
                 }
 
+                var dataInicial = new DateTime(2018, 10, 03);
+                var dataFinal = new DateTime(2018, 10, 03);
 
-                var pedido = (new PedidoDao()).GetPedido(27);
-                pedido.NFiscal = (new ControleFiscalDao()).GetUltimoNumeroNFiscalGerado() + 1;
+                var pedidos = (new PedidoDao()).GetPedidosDoCaixa(dataInicial, dataFinal);
 
-                pedido.Cliente = (new ClienteDao()).GetClienteConsumidorNaoIdentificado();
-                pedido.Operacao = (new OperacaoDao()).GetOperacaoPorPedido(pedido.NumDoc);
-                pedido.Pagamentos = (new TipoPagamentoDao()).GetPagametosDoPedido(pedido.NumDoc);
-
-                pedido.ItensDoPedido = (new PedidoItemDao()).GetItensDoPedido(pedido.NumDoc);
-                pedido.ItensDoPedido.ForEach(pedidoItem =>
-               {
-                   pedidoItem.Produto = (new ProdutoDao().GetProduto(pedidoItem.ProdutoId));
-                   pedidoItem.Produto.GrupoFiscal = (new ProdutoGrupoFiscalDao()).GetGrupoFiscalPorProduto(pedidoItem.ProdutoId);
-               });
-
-                var geraXml = new GeraXml();
-
-                //Gerando XML
-                var xml = geraXml.GeraXmlNFCe(pedido);
-                var GravaXml = File.CreateText(@"C:\Users\Renan\Desktop\xmlGerado.xml");
-                GravaXml.Write(xml.InnerXml);
-                GravaXml.Close();
-
-                //Assinando XML
-                var xmlAssinado = (new AssinaXml()).AssinaXML(xml.InnerXml, "infNFe", CertificadoDigital.getInstance.oCertificado);
-                var GravaXmlAssinado = File.CreateText(@"C:\Users\Renan\Desktop\xmlAssinado.xml");
-                GravaXmlAssinado.Write(xmlAssinado.InnerXml);
-                GravaXmlAssinado.Close();
-
-
-                //Validando XML
-                try
+                foreach (var pedido in pedidos)
                 {
-                    // Validando o XML
-                    var retValidar = (new ValidaXml()).Valida(xmlAssinado, "NFe");
-
-                    //Inserindo a URL QRCode no xml já assinado
-                    xmlAssinado.LoadXml(xmlAssinado.InnerXml.Replace("</infNFe>", "</infNFe><infNFeSupl><qrCode><![CDATA[" +
-                    geraXml.GetUrlQRCode(xmlAssinado, pedido) + "]]></qrCode></infNFeSupl>"));
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("** Erro ao validar **");
-                    Console.WriteLine(ex.Message);
-                }
-
-                var GravaXmlAssinadoComQrCode = File.CreateText(@"C:\Users\Renan\Desktop\xmlAssinadoComQrCode.xml");
-                GravaXmlAssinadoComQrCode.Write(xmlAssinado.InnerXml);
-                GravaXmlAssinadoComQrCode.Close();
 
 
+                    pedido.DataDigitacao = DateTime.Now;
 
-                var retornoDaTransmicao = (new TransmiteXml()).XML_NFCe(xmlAssinado, pedido.NFiscal.ToString(), CertificadoDigital.getInstance.oCertificado);
 
-                if (retornoDaTransmicao.Substring(0, 4) != "Erro")
-                {
-                    var xmlRetorno = new XmlDocument();
-                    xmlRetorno.LoadXml(retornoDaTransmicao);
+                    pedido.NFiscal = (new ControleFiscalDao()).GetUltimoNumeroNFiscalGerado() + 1;
 
-                    var GravaXmlTransmitido = File.CreateText(@"C:\Users\Renan\Desktop\xmlTransmitido.xml");
-                    GravaXmlTransmitido.Write(xmlRetorno.InnerText);
-                    GravaXmlTransmitido.Close();
+                    pedido.Cliente = (new ClienteDao()).GetClienteConsumidorNaoIdentificado();
+                    pedido.Operacao = (new OperacaoDao()).GetOperacaoPorPedido(pedido.NumDoc);
+                    pedido.Pagamentos = (new TipoPagamentoDao()).GetPagametosDoPedido(pedido.NumDoc);
 
-                    // Lote processado
-                    if (xmlRetorno.GetElementsByTagName("cStat")[0].InnerText == "104")
+                    pedido.ItensDoPedido = (new PedidoItemDao()).GetItensDoPedido(pedido.NumDoc);
+                    pedido.ItensDoPedido.ForEach(pedidoItem =>
+                   {
+                       pedidoItem.Produto = (new ProdutoDao().GetProduto(pedidoItem.ProdutoId));
+                       pedidoItem.Produto.GrupoFiscal = (new ProdutoGrupoFiscalDao()).GetGrupoFiscalPorProduto(pedidoItem.ProdutoId);
+                   });
+
+                    var geraXml = new GeraXml();
+
+                    //Gerando XML
+                    var xml = geraXml.GeraXmlNFCe(pedido);
+                    var GravaXml = File.CreateText(@"C:\Users\Succo\Desktop\xmlGerado.xml");
+                    GravaXml.Write(xml.InnerXml);
+                    GravaXml.Close();
+
+                    //Assinando XML
+                    var xmlAssinado = (new AssinaXml()).AssinaXML(xml.InnerXml, "infNFe", CertificadoDigital.getInstance.oCertificado);
+                    var GravaXmlAssinado = File.CreateText(@"C:\Users\Succo\Desktop\xmlAssinado.xml");
+                    GravaXmlAssinado.Write(xmlAssinado.InnerXml);
+                    GravaXmlAssinado.Close();
+
+
+                    //Validando XML
+                    try
                     {
-                        // Autorizado
-                        if (xmlRetorno.GetElementsByTagName("cStat")[1].InnerText == "100")
+                        // Validando o XML
+                        var retValidar = (new ValidaXml()).Valida(xmlAssinado, "NFe");
+
+                        //Inserindo a URL QRCode no xml já assinado
+                        xmlAssinado.LoadXml(xmlAssinado.InnerXml.Replace("</infNFe>", "</infNFe><infNFeSupl><qrCode><![CDATA[" +
+                        geraXml.GetUrlQRCode(xmlAssinado, pedido) + "]]></qrCode><urlChave>http://www4.fazenda.rj.gov.br/consultaNFCe/QRCode</urlChave></infNFeSupl>"));
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("** Erro ao validar **");
+                        Console.WriteLine(ex.Message);
+                    }
+
+                    var GravaXmlAssinadoComQrCode = File.CreateText(@"C:\Users\Succo\Desktop\xmlAssinadoComQrCode.xml");
+                    GravaXmlAssinadoComQrCode.Write(xmlAssinado.InnerXml);
+                    GravaXmlAssinadoComQrCode.Close();
+
+
+
+                    var retornoDaTransmicao = (new TransmiteXml()).XML_NFCe4(xmlAssinado, pedido.NFiscal.ToString(), CertificadoDigital.getInstance.oCertificado);
+
+                    if (retornoDaTransmicao.Substring(0, 4) != "Erro")
+                    {
+                        var xmlRetorno = new XmlDocument();
+                        xmlRetorno.LoadXml(retornoDaTransmicao);
+
+                        var GravaXmlTransmitido = File.CreateText(@"C:\Users\Succo\Desktop\xmlTransmitido.xml");
+                        GravaXmlTransmitido.Write(xmlRetorno.InnerXml);
+                        GravaXmlTransmitido.Close();
+
+                        // Lote processado
+                        if (xmlRetorno.GetElementsByTagName("cStat")[0].InnerText == "104")
                         {
-                            Console.WriteLine("FOI CARALHOOO!!");
+                            // Autorizado
+                            if (xmlRetorno.GetElementsByTagName("cStat")[1].InnerText == "100")
+                            {
+                                pedido.Chave = xmlRetorno.GetElementsByTagName("chNFe")[0].InnerText;
+                                pedido.Protocolo = xmlRetorno.GetElementsByTagName("nProt")[0].InnerText;
+
+                                // Separar somente o conteúdo a partir da tag <protNFe> até </protNFe>
+                                var nPosI = retornoDaTransmicao.IndexOf("<protNFe");
+                                var nPosF = retornoDaTransmicao.Length - (nPosI + 13);
+                                var strProc = retornoDaTransmicao.Substring(nPosI, nPosF);
+
+
+                                // XML pronto para salvar
+                                var strXmlProcNfe = @"<?xml version=""1.0"" encoding=""utf-8"" ?><nfeProc xmlns=""http://www.portalfiscal.inf.br/nfe"" versao=""4.00"">" + xmlAssinado.InnerXml + strProc + "</nfeProc>";
+
+                                pedido.Xml = new Xml()
+                                {
+                                    NumDoc = pedido.NumDoc,
+                                    ArquivoXml = strXmlProcNfe,
+                                    Data = DateTime.Now,
+                                    Modelo = pedido.ModeloNFiscal,
+                                    StatNFCe = "100"
+                                };
+
+
+
+                                using (var db = new Database("stringConexao"))
+                                {
+                                    db.BeginTransaction();
+
+                                    try
+                                    {
+                                        db.Update("Update Controle Set NFiscal=" + pedido.NFiscal + " Where ChvControle = 1");
+                                        db.Update("Update Movdb Set data_nfiscal = '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', NFiscal= " + pedido.NFiscal + ", Chave='" + pedido.Chave + "' ,Protocolo='" + pedido.Protocolo + "', status_nfce = '" + pedido.Xml.StatNFCe + "' Where NumDoc = " + pedido.NumDoc);
+
+                                        db.CompleteTransaction();
+                                    }
+                                    catch (Exception)
+                                    {
+                                        db.AbortTransaction();
+                                    }
+
+                                    if (!string.IsNullOrEmpty(ControleFiscal.GetInstance.CaminhoXmlAutorizado))
+                                    {
+                                        //Salvando o arquivo XML na pasta
+                                        var Grava = File.CreateText(ControleFiscal.GetInstance.CaminhoXmlAutorizado.Remove(ControleFiscal.GetInstance.CaminhoXmlAutorizado.Length - 1) + DateTime.Now.Month + @"\" + pedido.Chave + "-procNfe.xml");
+                                        Grava.Write(pedido.Xml.ArquivoXml);
+                                        Grava.Close();
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Erro no lote");
                         }
                     }
-                    else
-                    {
-                        Console.WriteLine("Erro no lote");
-                    }
                 }
-
 
 
             }

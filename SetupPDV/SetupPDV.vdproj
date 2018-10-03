@@ -57,6 +57,24 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_0C173015612241FB85B9F98151E8A8EE"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0D0448E005784CB9A8A4DC080769BFB6"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0E9E5AFD730F4360A5BC4F25A4F8BC64"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_0FE7FF76FC524EA6A46CC0CA99E513D0"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -82,6 +100,12 @@
         "Entry"
         {
         "MsmKey" = "8:_19024B4862E34C8A8E0F7A5452767DCE"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1AAC39E8FF454F86864021A5C8B445A1"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -123,13 +147,43 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_26A66609A251468B877D49E505074B13"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_292887D3716D4FE39AF1CE8853E36FE8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
+        "MsmKey" = "8:_2C4BF235AD3FED6288C61A6A29A3037B"
+        "OwnerKey" = "8:_32ADD7115D48DE7635B9D86C3980227E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2C4BF235AD3FED6288C61A6A29A3037B"
+        "OwnerKey" = "8:_6C0CF382D3FB47E1B4DCF810EF9AE9FE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2C4BF235AD3FED6288C61A6A29A3037B"
+        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_2C9200666A7B44E9A639D591E895E068"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2CC4528A660B448185BEB509F574A4F9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -165,6 +219,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_32ADD7115D48DE7635B9D86C3980227E"
+        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_35015A2F67A5B8B505B017C0192869F1"
+        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_353020BE6EC9492AA5B214A76B3196D7"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -183,8 +249,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_38697CC28F65DCC194116A2B81E2ED21"
-        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
+        "MsmKey" = "8:_38F9D12992DA425BBDB49663EF2811E6"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -243,7 +309,19 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_4D7CECDC69C7424EBA8A18081CEEFDFC"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_4E2552CD4DD04BA29C3665B84350522B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4E57293503164E429C9E87CB293B3862"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -375,48 +453,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_770ED87997B56AB7983BDC224B9F510C"
-        "OwnerKey" = "8:_D20CA467201F4BD3BFEE6D14CE4C5461"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_770ED87997B56AB7983BDC224B9F510C"
-        "OwnerKey" = "8:_FB9D495690964C5BB33B07B5DE0CB37F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_770ED87997B56AB7983BDC224B9F510C"
-        "OwnerKey" = "8:_9DB3715E749929A4EB6558CBA70B43EC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_770ED87997B56AB7983BDC224B9F510C"
-        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_770ED87997B56AB7983BDC224B9F510C"
-        "OwnerKey" = "8:_38697CC28F65DCC194116A2B81E2ED21"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_770ED87997B56AB7983BDC224B9F510C"
-        "OwnerKey" = "8:_F75EEC7EBD887735985C0CDB2A7A91FC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_770ED87997B56AB7983BDC224B9F510C"
-        "OwnerKey" = "8:_6C0CF382D3FB47E1B4DCF810EF9AE9FE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_79E328AC574F44B599C1F7B4C9CEBAB6"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -429,7 +465,19 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_7E14846389D64272928832ADB39E6AED"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_7E7C30A84BBF4FBBBA41066D5A7FF5D1"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8231E9B4440E447E83933909CF74ABC9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -441,8 +489,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_84B1DD56DF788F5AF0F7004DD0F9FCB3"
-        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
+        "MsmKey" = "8:_87970AC125D640D1BC012E11DCC82DB8"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -507,6 +555,48 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
+        "OwnerKey" = "8:_D0A62835D18739756A539E26319D6C10"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
+        "OwnerKey" = "8:_FB9D495690964C5BB33B07B5DE0CB37F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
+        "OwnerKey" = "8:_D20CA467201F4BD3BFEE6D14CE4C5461"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
+        "OwnerKey" = "8:_6C0CF382D3FB47E1B4DCF810EF9AE9FE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
+        "OwnerKey" = "8:_2C4BF235AD3FED6288C61A6A29A3037B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
+        "OwnerKey" = "8:_32ADD7115D48DE7635B9D86C3980227E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
+        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_985346F5627C4927A0B36EF763C3BD23"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -537,6 +627,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_9B30D81D33964EA981AE3D909F94C8F8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_9B4B9C711DEE4DEF85C7871BD7F9C48B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -549,13 +645,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_9D13AD0F0C99A9B7CB8BCD6D3E9CE8F6"
-        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_9DB3715E749929A4EB6558CBA70B43EC"
+        "MsmKey" = "8:_9D711D3A8E4268211C2B0F878AE5685B"
         "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -568,6 +658,12 @@
         "Entry"
         {
         "MsmKey" = "8:_A1194177FBBE47D0BD588A9E4DD88AB1"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A32E5ACDF24849CCAA3163DFA7F3B2BA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -615,6 +711,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_B240857C000B4A94AC7D2BC1E43C4A90"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_B62CD8EB1CF04AE3995F6BF6B817C413"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -628,6 +730,18 @@
         "Entry"
         {
         "MsmKey" = "8:_BEABC37EC70E43C98D764F5480A4BBC8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C5BA7FE2CE1449A2B2B90AD1EE8B3586"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C6191255697F47F29B2DC1A262F51F43"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -651,14 +765,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_CF530DA99564B08E4843CDFEECD46ED7"
-        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
+        "MsmKey" = "8:_D025314CB5C94183AA77A9B95BF79F4F"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_D025314CB5C94183AA77A9B95BF79F4F"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_D0A62835D18739756A539E26319D6C10"
+        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -670,6 +784,12 @@
         "Entry"
         {
         "MsmKey" = "8:_D2589F40B8734DB480F4CB81A8BB9C8C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D2FB7AA7EB9C4AE8818583B1CF1A8314"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -706,6 +826,12 @@
         "Entry"
         {
         "MsmKey" = "8:_E02089AFF5D74964BD82C253A3B5EFBA"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E16CC144EBD741E69798545D931577E1"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -753,20 +879,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_F75EEC7EBD887735985C0CDB2A7A91FC"
-        "OwnerKey" = "8:_6C0CF382D3FB47E1B4DCF810EF9AE9FE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F75EEC7EBD887735985C0CDB2A7A91FC"
+        "MsmKey" = "8:_F66C11520DA91936EEC275F8CA23EC39"
         "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F75EEC7EBD887735985C0CDB2A7A91FC"
-        "OwnerKey" = "8:_9DB3715E749929A4EB6558CBA70B43EC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -826,67 +940,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_06CD2EE7741F44AFB39AE17B102BC2A6"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_FB9D495690964C5BB33B07B5DE0CB37F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_84B1DD56DF788F5AF0F7004DD0F9FCB3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9DB3715E749929A4EB6558CBA70B43EC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_38697CC28F65DCC194116A2B81E2ED21"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9D13AD0F0C99A9B7CB8BCD6D3E9CE8F6"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CF530DA99564B08E4843CDFEECD46ED7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6C0CF382D3FB47E1B4DCF810EF9AE9FE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F75EEC7EBD887735985C0CDB2A7A91FC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5A8ED3B2D03B4AE79ED3CB229B790171"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -898,7 +952,67 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_770ED87997B56AB7983BDC224B9F510C"
+        "OwnerKey" = "8:_6C0CF382D3FB47E1B4DCF810EF9AE9FE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5A8ED3B2D03B4AE79ED3CB229B790171"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_F66C11520DA91936EEC275F8CA23EC39"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_32ADD7115D48DE7635B9D86C3980227E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2C4BF235AD3FED6288C61A6A29A3037B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_D0A62835D18739756A539E26319D6C10"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_9D711D3A8E4268211C2B0F878AE5685B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_35015A2F67A5B8B505B017C0192869F1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_06CD2EE7741F44AFB39AE17B102BC2A6"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -919,6 +1033,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -935,6 +1057,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -1115,6 +1245,66 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0C173015612241FB85B9F98151E8A8EE"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\tiposBasico_v4.00.xsd"
+            "TargetName" = "8:tiposBasico_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0D0448E005784CB9A8A4DC080769BFB6"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\retConsSitNFe_v4.00.xsd"
+            "TargetName" = "8:retConsSitNFe_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0E9E5AFD730F4360A5BC4F25A4F8BC64"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\retInutNFe_v4.00.xsd"
+            "TargetName" = "8:retInutNFe_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0FE7FF76FC524EA6A46CC0CA99E513D0"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\Imagens\\lock.png"
@@ -1212,6 +1402,26 @@
             "TargetName" = "8:lixeira.png"
             "Tag" = "8:"
             "Folder" = "8:_8B8B40D1CC9D4C70A5E7EE23C0350BA9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1AAC39E8FF454F86864021A5C8B445A1"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\enviNFe_v4.00.xsd"
+            "TargetName" = "8:enviNFe_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1346,6 +1556,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_26A66609A251468B877D49E505074B13"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\leiauteConsSitNFe_v4.00.xsd"
+            "TargetName" = "8:leiauteConsSitNFe_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_292887D3716D4FE39AF1CE8853E36FE8"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\Imagens\\clientes60.png"
@@ -1366,12 +1596,63 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2C4BF235AD3FED6288C61A6A29A3037B"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ProjetoPDVUtil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_2C4BF235AD3FED6288C61A6A29A3037B"
+                    {
+                    "Name" = "8:ProjetoPDVUtil.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ProjetoPDVUtil.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2C9200666A7B44E9A639D591E895E068"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\Imagens\\ffff.jpg"
             "TargetName" = "8:ffff.jpg"
             "Tag" = "8:"
             "Folder" = "8:_8B8B40D1CC9D4C70A5E7EE23C0350BA9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2CC4528A660B448185BEB509F574A4F9"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\xmldsig-core-schema_v1.01.xsd"
+            "TargetName" = "8:xmldsig-core-schema_v1.01.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1486,6 +1767,68 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_32ADD7115D48DE7635B9D86C3980227E"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ProjetoPDVServico, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_32ADD7115D48DE7635B9D86C3980227E"
+                    {
+                    "Name" = "8:ProjetoPDVServico.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ProjetoPDVServico.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_35015A2F67A5B8B505B017C0192869F1"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:BuscaCEP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_35015A2F67A5B8B505B017C0192869F1"
+                    {
+                    "Name" = "8:BuscaCEP.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:BuscaCEP.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_353020BE6EC9492AA5B214A76B3196D7"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\Imagens\\add.png"
@@ -1546,23 +1889,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_38697CC28F65DCC194116A2B81E2ED21"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_38F9D12992DA425BBDB49663EF2811E6"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProjetoPDVDao, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_38697CC28F65DCC194116A2B81E2ED21"
-                    {
-                    "Name" = "8:ProjetoPDVDao.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:ProjetoPDVDao.DLL"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\consReciNFe_v4.00.xsd"
+            "TargetName" = "8:consReciNFe_v4.00.xsd"
             "Tag" = "8:"
-            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1574,7 +1906,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3990ADC8236A49D385BF50951804ED1B"
@@ -1757,12 +2089,52 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4D7CECDC69C7424EBA8A18081CEEFDFC"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\procNFe_v4.00.xsd"
+            "TargetName" = "8:procNFe_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4E2552CD4DD04BA29C3665B84350522B"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\Imagens\\Logo_Concursar 370x150.png"
             "TargetName" = "8:Logo_Concursar 370x150.png"
             "Tag" = "8:"
             "Folder" = "8:_8B8B40D1CC9D4C70A5E7EE23C0350BA9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4E57293503164E429C9E87CB293B3862"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\retEnviNFe_v4.00.xsd"
+            "TargetName" = "8:retEnviNFe_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2230,37 +2602,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_770ED87997B56AB7983BDC224B9F510C"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProjetoPDVModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_770ED87997B56AB7983BDC224B9F510C"
-                    {
-                    "Name" = "8:ProjetoPDVModel.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:ProjetoPDVModel.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_79E328AC574F44B599C1F7B4C9CEBAB6"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ProjetoPDVServico.dll.config"
@@ -2301,12 +2642,52 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7E14846389D64272928832ADB39E6AED"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\consStatServ_v4.00.xsd"
+            "TargetName" = "8:consStatServ_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7E7C30A84BBF4FBBBA41066D5A7FF5D1"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\Imagens\\money1.png"
             "TargetName" = "8:money1.png"
             "Tag" = "8:"
             "Folder" = "8:_8B8B40D1CC9D4C70A5E7EE23C0350BA9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8231E9B4440E447E83933909CF74ABC9"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\nfe_v4.00.xsd"
+            "TargetName" = "8:nfe_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2341,23 +2722,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_84B1DD56DF788F5AF0F7004DD0F9FCB3"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_87970AC125D640D1BC012E11DCC82DB8"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:TabControlEX, Version=0.0.3271.41578, Culture=neutral, PublicKeyToken=1db242dc828e4b4e"
-                "ScatterAssemblies"
-                {
-                    "_84B1DD56DF788F5AF0F7004DD0F9FCB3"
-                    {
-                    "Name" = "8:TabControlEX.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:TabControlEX.DLL"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\consSitNFe_v4.00.xsd"
+            "TargetName" = "8:consSitNFe_v4.00.xsd"
             "Tag" = "8:"
-            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2369,7 +2739,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_87D68D6DB29A4E63B5CE0D978D946493"
@@ -2572,6 +2942,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_96C86E6CD08B255C7B2C2FADB2969CAD"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ProjetoPDVModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_96C86E6CD08B255C7B2C2FADB2969CAD"
+                    {
+                    "Name" = "8:ProjetoPDVModel.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ProjetoPDVModel.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_985346F5627C4927A0B36EF763C3BD23"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\Imagens\\Computer.png"
@@ -2672,6 +3073,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9B30D81D33964EA981AE3D909F94C8F8"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\retConsStatServ_v4.00.xsd"
+            "TargetName" = "8:retConsStatServ_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9B4B9C711DEE4DEF85C7871BD7F9C48B"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\Imagens\\visa3.png"
@@ -2712,51 +3133,20 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9D13AD0F0C99A9B7CB8BCD6D3E9CE8F6"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9D711D3A8E4268211C2B0F878AE5685B"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_9D13AD0F0C99A9B7CB8BCD6D3E9CE8F6"
+                    "_9D711D3A8E4268211C2B0F878AE5685B"
                     {
                     "Name" = "8:Microsoft.VisualBasic.PowerPacks.DLL"
                     "Attributes" = "3:512"
                     }
                 }
             "SourcePath" = "8:Microsoft.VisualBasic.PowerPacks.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9DB3715E749929A4EB6558CBA70B43EC"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProjetoPDVServico, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_9DB3715E749929A4EB6558CBA70B43EC"
-                    {
-                    "Name" = "8:ProjetoPDVServico.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:ProjetoPDVServico.DLL"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
@@ -2800,6 +3190,26 @@
             "TargetName" = "8:leiauteInutNFe_v3.10.xsd"
             "Tag" = "8:"
             "Folder" = "8:_FFB29AFF592A4773B7F9718FC7FD6B13"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A32E5ACDF24849CCAA3163DFA7F3B2BA"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\leiauteConsStatServ_v4.00.xsd"
+            "TargetName" = "8:leiauteConsStatServ_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2954,6 +3364,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B240857C000B4A94AC7D2BC1E43C4A90"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\inutNFe_v4.00.xsd"
+            "TargetName" = "8:inutNFe_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B62CD8EB1CF04AE3995F6BF6B817C413"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\Imagens\\1409_Monitor_256x256.png"
@@ -3000,6 +3430,46 @@
             "TargetName" = "8:carrinho60.png"
             "Tag" = "8:"
             "Folder" = "8:_8B8B40D1CC9D4C70A5E7EE23C0350BA9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C5BA7FE2CE1449A2B2B90AD1EE8B3586"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\leiauteNFe_v4.00.xsd"
+            "TargetName" = "8:leiauteNFe_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C6191255697F47F29B2DC1A262F51F43"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\retConsReciNFe_v4.00.xsd"
+            "TargetName" = "8:retConsReciNFe_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -3074,37 +3544,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CF530DA99564B08E4843CDFEECD46ED7"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:BuscaCEP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_CF530DA99564B08E4843CDFEECD46ED7"
-                    {
-                    "Name" = "8:BuscaCEP.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:BuscaCEP.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D025314CB5C94183AA77A9B95BF79F4F"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\Imagens\\cashier-1-iloveimg-resized.png"
@@ -3123,6 +3562,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D0A62835D18739756A539E26319D6C10"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ProjetoPDVDao, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_D0A62835D18739756A539E26319D6C10"
+                    {
+                    "Name" = "8:ProjetoPDVDao.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ProjetoPDVDao.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D20CA467201F4BD3BFEE6D14CE4C5461"
@@ -3162,6 +3632,26 @@
             "TargetName" = "8:retConsStatServ_v3.10.xsd"
             "Tag" = "8:"
             "Folder" = "8:_FFB29AFF592A4773B7F9718FC7FD6B13"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D2FB7AA7EB9C4AE8818583B1CF1A8314"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\leiauteInutNFe_v4.00.xsd"
+            "TargetName" = "8:leiauteInutNFe_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -3282,6 +3772,26 @@
             "TargetName" = "8:maestro2.png"
             "Tag" = "8:"
             "Folder" = "8:_8B8B40D1CC9D4C70A5E7EE23C0350BA9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E16CC144EBD741E69798545D931577E1"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\procInutNFe_v4.00.xsd"
+            "TargetName" = "8:procInutNFe_v4.00.xsd"
+            "Tag" = "8:"
+            "Folder" = "8:_EAD040B1303043CB9542942DD9FDD6A7"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -3436,20 +3946,20 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F75EEC7EBD887735985C0CDB2A7A91FC"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F66C11520DA91936EEC275F8CA23EC39"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProjetoPDVUtil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:TabControlEX, Version=0.0.3271.41578, Culture=neutral, PublicKeyToken=1db242dc828e4b4e"
                 "ScatterAssemblies"
                 {
-                    "_F75EEC7EBD887735985C0CDB2A7A91FC"
+                    "_F66C11520DA91936EEC275F8CA23EC39"
                     {
-                    "Name" = "8:ProjetoPDVUtil.DLL"
+                    "Name" = "8:TabControlEX.DLL"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:ProjetoPDVUtil.DLL"
+            "SourcePath" = "8:TabControlEX.DLL"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
@@ -3685,6 +4195,17 @@
                     "Property" = "8:_7BC21BD902A8445A9200A67F4F217CCD"
                         "Folders"
                         {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_EAD040B1303043CB9542942DD9FDD6A7"
+                            {
+                            "Name" = "8:NFe4"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_09E0F6D7DEE141AC8E6A3E87E51348EE"
+                                "Folders"
+                                {
+                                }
+                            }
                             "{9EF0B969-E518-4E46-987F-47570745A589}:_FFB29AFF592A4773B7F9718FC7FD6B13"
                             {
                             "Name" = "8:NFe"

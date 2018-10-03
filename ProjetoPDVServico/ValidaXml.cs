@@ -39,7 +39,7 @@ namespace ProjetoPDVServico
                 {
                     case "NFe":
                         //caminhoShema = @"E:\Documents and Settings\Renan\Meus documentos\Visual Studio 2010\Projects\ProjetoPDVUI\ESQUEMA\NFe\nfe_v3.10.xsd";
-                        caminhoShema = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase) + @"\ESQUEMA\NFe\nfe_v3.10.xsd";
+                        caminhoShema = Path.GetDirectoryName(Assembly.GetExecutingAssembly().GetName().CodeBase) + @"\ESQUEMA\NFe4\nfe_v4.00.xsd";
                         break;
                     case "Canc":
                         //caminhoShema = @"E:\Documents and Settings\Renan\Meus documentos\Visual Studio 2010\Projects\ProjetoPDVUI\ESQUEMA\Evento_Canc\eventoCancNFe_v1.00.xsd";

@@ -32,7 +32,7 @@ namespace ProjetoPDVServico
         }
 
 
-        public string XML_NFCe(XmlDocument xmlAssinado, string nfiscal, X509Certificate2 _X509Cert)
+        public string XML_NFCe4(XmlDocument xmlAssinado, string nfiscal, X509Certificate2 _X509Cert)
         {
             try
             {
@@ -49,16 +49,16 @@ namespace ProjetoPDVServico
                 if (GeraXml.AmbienteNFCe == "1")
                 {
                     //NFCeRecepcaoP - PRODUCAO  /  NFCeRecepcaoH - HOMOLOGACAO
-                    NFCeAutorizacaoP.NfeAutorizacao WsHRecepcao = new NFCeAutorizacaoP.NfeAutorizacao();
+                    NFCeAutorizacao4P.NFeAutorizacao4 WsHRecepcao = new NFCeAutorizacao4P.NFeAutorizacao4();
 
                     WsHRecepcao.ClientCertificates.Add(_X509Cert);
                     WsHRecepcao.Timeout = Convert.ToInt32(240000);
                     WsHRecepcao.InitializeLifetimeService();
 
-                    NFCeAutorizacaoP.nfeCabecMsg cabec = new NFCeAutorizacaoP.nfeCabecMsg();
-                    cabec.cUF = "33";
-                    cabec.versaoDados = "3.10";
-                    WsHRecepcao.nfeCabecMsgValue = cabec;
+                    //NFCeAutorizacaoP.nfeCabecMsg cabec = new NFCeAutorizacaoP.nfeCabecMsg();
+                    //cabec.cUF = "33";
+                    //cabec.versaoDados = "3.10";
+                    //WsHRecepcao.nfeCabecMsgValue = cabec;
                     TextoXML = WsHRecepcao.nfeAutorizacaoLote(xmlDados).OuterXml;
                     WsHRecepcao.Dispose();
 
@@ -67,16 +67,16 @@ namespace ProjetoPDVServico
                 {
                     //NFeRecepcaoP - PRODUCAO  /  NFeRecepcaoH - HOMOLOGACAO
                     //NFCeAutorizacao4H.NFeAutorizacao4 WsHRecepcao = new NFCeAutorizacao4H.NFeAutorizacao4();
-                    NFCeAutorizacaoH.NfeAutorizacao WsHRecepcao = new NFCeAutorizacaoH.NfeAutorizacao();
+                    NFCeAutorizacao4H.NFeAutorizacao4 WsHRecepcao = new NFCeAutorizacao4H.NFeAutorizacao4();
 
                     WsHRecepcao.ClientCertificates.Add(_X509Cert);
                     WsHRecepcao.Timeout = Convert.ToInt32(240000);
                     WsHRecepcao.InitializeLifetimeService();
 
-                    NFCeAutorizacaoH.nfeCabecMsg cabec = new NFCeAutorizacaoH.nfeCabecMsg();
-                    cabec.cUF = "33";
-                    cabec.versaoDados = "3.10";
-                    WsHRecepcao.nfeCabecMsgValue = cabec;
+                    //NFCeAutorizacaoH.nfeCabecMsg cabec = new NFCeAutorizacaoH.nfeCabecMsg();
+                    //cabec.cUF = "33";
+                    //cabec.versaoDados = "3.10";
+                    //WsHRecepcao.nfeCabecMsgValue = cabec;
                     TextoXML = WsHRecepcao.nfeAutorizacaoLote(xmlDados).OuterXml;
                     WsHRecepcao.Dispose();
                 }
