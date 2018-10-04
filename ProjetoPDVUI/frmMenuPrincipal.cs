@@ -140,7 +140,8 @@ namespace ProjetoPDVUI
 
         private void toolStripButton7_Click(object sender, EventArgs e)
         {
-
+            var frm = new frmProdutosVendidos();
+            frm.ShowDialog();
         }
 
         private void produtoToolStripMenuItem_Click(object sender, EventArgs e)

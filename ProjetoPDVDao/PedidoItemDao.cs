@@ -34,7 +34,7 @@ namespace ProjetoPDVDao
                                                                                     "group by mi.produto_id) END AS quantidade, SUM(quantidade) as numdoc, SUM(valor) as Valor " +
                                                                                     "FROM Movdb INNER JOIN Movitens mi ON Movdb.NumDoc = mi.NumDoc " +
                                                                                     "INNER JOIN Produto ON mi.produto_id = Produto.produto_id " +
-                                                                                    "WHERE(modelo = '65' AND CondDoc = 'F') AND(YEAR(data_digitacao) = '2018' and MONTH(data_digitacao) = '09') " +
+                                                                                    "WHERE(modelo = '65' AND CondDoc = 'F') AND " + queryMes +
                                                                                     "group by descricao, mi.produto_id " +
                                                                                     "order by descricao").ToList();
             }

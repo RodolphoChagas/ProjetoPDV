@@ -200,6 +200,12 @@
     <Compile Include="frmProdutoGrupoFiscal.Designer.cs">
       <DependentUpon>frmProdutoGrupoFiscal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmProdutosVendidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutosVendidos.Designer.cs">
+      <DependentUpon>frmProdutosVendidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSangria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -309,6 +315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmProdutoGrupoFiscal.resx">
       <DependentUpon>frmProdutoGrupoFiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutosVendidos.resx">
+      <DependentUpon>frmProdutosVendidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSangria.resx">
       <DependentUpon>frmSangria.cs</DependentUpon>

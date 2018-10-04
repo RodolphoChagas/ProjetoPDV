@@ -32,7 +32,7 @@ namespace ProjetoPDVUI
             categorias.Add(new ProdutoCategoria() { CategoriaId = 0, Descricao = "COMBOS" });
             GenerateTableLayout(tableCategoria, categorias);
 
-            var produtosSalgados = (new ProdutoDao()).GetProdutosPorCategoria(1);
+            var produtosSalgados = (new ProdutoDao()).GetProdutosPorCategoria(17);
             GenerateTableLayout(tableProdutos, produtosSalgados);
         }
 
@@ -232,7 +232,8 @@ namespace ProjetoPDVUI
 
                 if (lstVWItens.Items.Count > 0)
                 {
-                    var item = lstVWItens.FindItemWithText(produto.ProdutoId.ToString(), false, 0, true);
+                    //var item = lstVWItens.FindItemWithText(produto.ProdutoId.ToString(), false, 0, true);
+                    var item = lstVWItens.FindItemWithText(produto.ProdutoId.ToString(), false, 0, false);
 
                     //Se o item já existir na lista
                     if (item != null)
@@ -475,7 +476,7 @@ namespace ProjetoPDVUI
             if (txtBuscaProduto.Text.Trim().Length > 0)
                 produtos = (new ProdutoDao()).GetProdutos("descricao LIKE '%" + txtBuscaProduto.Text.Trim() + "%' COLLATE LATIN1_GENERAL_CI_AI");
             else
-                produtos = (new ProdutoDao()).GetProdutosPorCategoria(1);
+                produtos = (new ProdutoDao()).GetProdutosPorCategoria(17);
 
             GenerateTableLayout(tableProdutos, produtos);
         }
