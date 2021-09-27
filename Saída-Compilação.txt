@@ -1,0 +1,33 @@
+﻿1>------ Compilação iniciada: Projeto: ProjetoPDVModel, Configuração: Debug Any CPU ------
+2>------ Compilação ignorada: Projeto: SetupPDV, Configuração: Debug ------
+2>Não há projeto selecionado para compilar nesta configuração de solução 
+1>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVModel\Email.cs(24,17,24,26): warning CS0219: A variável "iTotalqtd" é atribuída, mas seu valor nunca é usado
+1>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVModel\Email.cs(25,17,25,35): warning CS0219: A variável "iTotalqtdAcumulado" é atribuída, mas seu valor nunca é usado
+1>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVModel\Email.cs(26,21,26,31): warning CS0219: A variável "totalValor" é atribuída, mas seu valor nunca é usado
+1>  ProjetoPDVModel -> C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVModel\bin\Debug\ProjetoPDVModel.dll
+3>------ Compilação iniciada: Projeto: ProjetoPDVDao, Configuração: Debug Any CPU ------
+4>------ Compilação iniciada: Projeto: ProjetoPDVUtil, Configuração: Debug Any CPU ------
+3>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVDao\XmlDao.cs(111,30,111,32): warning CS0168: A variável "ex" está declarada, mas nunca é usada
+3>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVDao\ProdutoCategoriaDao.cs(17,30,17,32): warning CS0168: A variável "ex" está declarada, mas nunca é usada
+3>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVDao\ProdutoCategoriaDao.cs(29,30,29,32): warning CS0168: A variável "ex" está declarada, mas nunca é usada
+3>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVDao\PedidoDao.cs(138,24,138,32): warning CS0168: A variável "vendedor" está declarada, mas nunca é usada
+3>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVDao\ProdutoComboDao.cs(43,30,43,32): warning CS0168: A variável "ex" está declarada, mas nunca é usada
+3>  ProjetoPDVDao -> C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVDao\bin\Debug\ProjetoPDVDao.dll
+4>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVUtil\ImpressoraBematech.cs(282,17,282,30): warning CS0219: A variável "valorDesconto" é atribuída, mas seu valor nunca é usado
+4>  ProjetoPDVUtil -> C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVUtil\bin\Debug\ProjetoPDVUtil.dll
+5>------ Compilação iniciada: Projeto: ProjetoPDVServico, Configuração: Debug Any CPU ------
+5>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVServico\GeraXml.cs(561,17,561,32): warning CS0219: A variável "calcula_Imposto" é atribuída, mas seu valor nunca é usado
+5>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVServico\GeraXml.cs(27,24,27,32): warning CS0169: O campo "GeraXml._CSCNFCe" nunca é usado
+5>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVServico\GeraXml.cs(55,25,55,31): warning CS0414: O campo "GeraXml.vBCPIS" é atribuído, mas seu valor nunca é usado
+5>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVServico\GeraXml.cs(56,25,56,34): warning CS0414: O campo "GeraXml.vBCCOFINS" é atribuído, mas seu valor nunca é usado
+5>  ProjetoPDVServico -> C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVServico\bin\Debug\ProjetoPDVServico.dll
+6>------ Compilação iniciada: Projeto: ProjetoPDVUI, Configuração: Debug Any CPU ------
+7>------ Compilação iniciada: Projeto: ProjetoTeste, Configuração: Debug Any CPU ------
+6>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVUI\frmFechaCaixa.cs(144,30,144,32): warning CS0168: A variável "ex" está declarada, mas nunca é usada
+6>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVUI\frmMovimento.cs(157,21,157,31): warning CS0219: A variável "iPendentes" é atribuída, mas seu valor nunca é usado
+6>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVUI\frmProdutoComboItem.cs(136,34,136,36): warning CS0168: A variável "ex" está declarada, mas nunca é usada
+6>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVUI\frmSelecionaPagamento1.cs(385,30,385,32): warning CS0168: A variável "ex" está declarada, mas nunca é usada
+6>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVUI\frmSangria.cs(163,30,163,32): warning CS0168: A variável "ex" está declarada, mas nunca é usada
+6>C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVUI\frmProduto.cs(15,49,15,58): warning CS0169: O campo "frmProduto._frmLista" nunca é usado
+6>  ProjetoPDVUI -> C:\SISTEMAS\Versão ProjetoPDV\ProjetoPDV\ProjetoPDVUI\bin\Debug\ProjetoPDVUI.exe
+========== Compilar: 6 com êxito, 0 com falha, 0 atualizados, 1 ignorados ==========

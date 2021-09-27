@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjetoPDVUI
@@ -16,7 +10,7 @@ namespace ProjetoPDVUI
         {
             InitializeComponent();
 
-            pictureBox1.Image = System.Drawing.Bitmap.FromFile(@"Imagens\lixeira.png");
+            pictureBox1.Image = Bitmap.FromFile(@"Imagens\lixeira.png");
         }
 
         private void cmdLocalizar_Click(object sender, EventArgs e)
@@ -26,7 +20,7 @@ namespace ProjetoPDVUI
 
         private void CmdFechar_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
     }
 }

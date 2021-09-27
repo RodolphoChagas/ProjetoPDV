@@ -74,6 +74,7 @@ namespace ProjetoPDVUI
                 ControleFiscal.GetInstance.CaminhoXmlAutorizado = control.CaminhoXmlAutorizado;
                 ControleFiscal.GetInstance.CaminhoXmlCancelado = control.CaminhoXmlCancelado;
                 ControleFiscal.GetInstance.CaminhoXmlInutilizado = control.CaminhoXmlInutilizado;
+                ControleFiscal.GetInstance.TZD = control.TZD;
 
                 control = null;
             }
@@ -159,6 +160,18 @@ namespace ProjetoPDVUI
         private void históricoDeCaixaToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cancelarNFeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new frmCancela();
+            frm.ShowDialog();
+        }
+
+        private void contasAPagarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new frmCap();
+            frm.ShowDialog();
         }
     }
 }

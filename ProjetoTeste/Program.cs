@@ -21,6 +21,26 @@ namespace ProjetoTeste
             try
             {
 
+
+                MP2032.ConfiguraModeloImpressora(7); // Bematech MP-4200 TH
+                MP2032.IniciaPorta("USB");
+
+                    
+                    bool isSangria = true;
+
+                decimal valor = 10.50m;
+
+                    if (!ImpressoraBematech.isSangriaAcrescimo(isSangria, DateTime.Now, valor, "Mercado"))
+
+
+
+
+
+
+
+
+                return;
+
                 GeraXml.AmbienteNFCe = "1";
 
                 CertificadoDigital.getInstance.Seleciona_Certificado();

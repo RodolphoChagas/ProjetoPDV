@@ -49,6 +49,7 @@
             this.lblVoltar = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblSalvar = new System.Windows.Forms.Label();
+            this.ckImprimir = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panelOperacao.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -62,6 +63,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.ckImprimir);
             this.panel1.Controls.Add(this.txtObservacao);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.txtValor);
@@ -147,7 +149,6 @@
             this.rdEntrada.Name = "rdEntrada";
             this.rdEntrada.Size = new System.Drawing.Size(126, 18);
             this.rdEntrada.TabIndex = 6;
-            this.rdEntrada.TabStop = true;
             this.rdEntrada.Tag = "4";
             this.rdEntrada.Text = "Entrada - Acréscimo";
             this.rdEntrada.UseVisualStyleBackColor = true;
@@ -166,6 +167,7 @@
             // rdSaidaSangria
             // 
             this.rdSaidaSangria.AutoSize = true;
+            this.rdSaidaSangria.Checked = true;
             this.rdSaidaSangria.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.rdSaidaSangria.Location = new System.Drawing.Point(14, 64);
             this.rdSaidaSangria.Name = "rdSaidaSangria";
@@ -190,13 +192,12 @@
             // rdSaidaDespesa
             // 
             this.rdSaidaDespesa.AutoSize = true;
-            this.rdSaidaDespesa.Checked = true;
+            this.rdSaidaDespesa.Enabled = false;
             this.rdSaidaDespesa.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.rdSaidaDespesa.Location = new System.Drawing.Point(14, 13);
             this.rdSaidaDespesa.Name = "rdSaidaDespesa";
             this.rdSaidaDespesa.Size = new System.Drawing.Size(188, 18);
             this.rdSaidaDespesa.TabIndex = 1;
-            this.rdSaidaDespesa.TabStop = true;
             this.rdSaidaDespesa.Text = "Saída - Lançamento de Despesa";
             this.rdSaidaDespesa.UseVisualStyleBackColor = true;
             // 
@@ -293,11 +294,23 @@
             this.lblSalvar.ForeColor = System.Drawing.Color.Black;
             this.lblSalvar.Location = new System.Drawing.Point(27, 360);
             this.lblSalvar.Name = "lblSalvar";
-            this.lblSalvar.Size = new System.Drawing.Size(96, 28);
+            this.lblSalvar.Size = new System.Drawing.Size(88, 28);
             this.lblSalvar.TabIndex = 211;
             this.lblSalvar.Text = "Salvar";
             this.lblSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblSalvar.Click += new System.EventHandler(this.lblSalvar_Click);
+            // 
+            // ckImprimir
+            // 
+            this.ckImprimir.AutoSize = true;
+            this.ckImprimir.Checked = true;
+            this.ckImprimir.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ckImprimir.Location = new System.Drawing.Point(3, 309);
+            this.ckImprimir.Name = "ckImprimir";
+            this.ckImprimir.Size = new System.Drawing.Size(109, 17);
+            this.ckImprimir.TabIndex = 215;
+            this.ckImprimir.Text = "Imprimir ao Salvar";
+            this.ckImprimir.UseVisualStyleBackColor = true;
             // 
             // frmSangria
             // 
@@ -348,5 +361,6 @@
         private System.Windows.Forms.Label lblVoltar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblSalvar;
+        private System.Windows.Forms.CheckBox ckImprimir;
     }
 }

@@ -14,6 +14,7 @@ namespace ProjetoPDVModel
         public string ArquivoXml { get; set; }
         public string Modelo { get; set; }
         public string StatNFCe { get; set; }
+        public string chave { get; set; }
 
 
         //public XML() { }

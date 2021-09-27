@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVisualizaPedido));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblObservacao = new System.Windows.Forms.Label();
             this.lblPedido = new System.Windows.Forms.Label();
             this.lblStatusCaixa = new System.Windows.Forms.Label();
             this.lstVwProdutos = new System.Windows.Forms.ListView();
@@ -54,10 +55,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.lblSair = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblObservacao = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblImprimir = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -72,6 +75,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(227, 466);
             this.panel1.TabIndex = 1;
+            // 
+            // lblObservacao
+            // 
+            this.lblObservacao.BackColor = System.Drawing.Color.Transparent;
+            this.lblObservacao.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblObservacao.ForeColor = System.Drawing.Color.White;
+            this.lblObservacao.Location = new System.Drawing.Point(11, 173);
+            this.lblObservacao.Name = "lblObservacao";
+            this.lblObservacao.Size = new System.Drawing.Size(200, 82);
+            this.lblObservacao.TabIndex = 2;
+            this.lblObservacao.Text = "Observacao:";
             // 
             // lblPedido
             // 
@@ -343,22 +357,44 @@
             this.pictureBox1.TabIndex = 220;
             this.pictureBox1.TabStop = false;
             // 
-            // lblObservacao
+            // pictureBox2
             // 
-            this.lblObservacao.BackColor = System.Drawing.Color.Transparent;
-            this.lblObservacao.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblObservacao.ForeColor = System.Drawing.Color.White;
-            this.lblObservacao.Location = new System.Drawing.Point(11, 173);
-            this.lblObservacao.Name = "lblObservacao";
-            this.lblObservacao.Size = new System.Drawing.Size(200, 82);
-            this.lblObservacao.TabIndex = 2;
-            this.lblObservacao.Text = "Observacao:";
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox2.BackColor = System.Drawing.Color.LightGray;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(236, 426);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(53, 36);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 222;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            // 
+            // lblImprimir
+            // 
+            this.lblImprimir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblImprimir.BackColor = System.Drawing.Color.LightGray;
+            this.lblImprimir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblImprimir.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImprimir.ForeColor = System.Drawing.Color.Black;
+            this.lblImprimir.Location = new System.Drawing.Point(250, 431);
+            this.lblImprimir.Name = "lblImprimir";
+            this.lblImprimir.Size = new System.Drawing.Size(100, 28);
+            this.lblImprimir.TabIndex = 221;
+            this.lblImprimir.Text = "Imprimir";
+            this.lblImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblImprimir.Visible = false;
+            this.lblImprimir.Click += new System.EventHandler(this.lblImprimir_Click);
             // 
             // frmVisualizaPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(889, 468);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.lblImprimir);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblSair);
             this.Controls.Add(this.panel4);
@@ -375,6 +411,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -407,5 +444,7 @@
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblObservacao;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblImprimir;
     }
 }

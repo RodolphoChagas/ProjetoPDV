@@ -4,6 +4,7 @@ using System.ComponentModel;
 using ProjetoPDVModel;
 using System.Windows.Forms;
 using ProjetoPDVDao;
+using ProjetoPDVUtil;
 
 namespace ProjetoPDVUI
 {
@@ -29,6 +30,12 @@ namespace ProjetoPDVUI
 
             ListaProdutos();
             ListaPagamentos();
+
+            if (_pedido.OperacaoId == 2 || _pedido.OperacaoId == 4)
+            {
+                pictureBox2.Visible = true;
+                lblImprimir.Visible = true;
+            }
         }
 
         private void ListaPagamentos()
@@ -97,6 +104,46 @@ namespace ProjetoPDVUI
             if (e.KeyData == Keys.Escape)
             {
                 Close();
+            }
+        }
+
+        private void lblImprimir_Click(object sender, EventArgs e)
+        {
+            VerificaStatusImpressora();
+
+            bool isSangria = false;
+
+            if (_pedido.OperacaoId == 2)
+                isSangria = true;
+
+            if (!ImpressoraBematech.isSangriaAcrescimo(isSangria, _pedido.DataDigitacao, _pedido.ValorPedido, lblObservacao.Text.Trim()))
+                MessageBox.Show("Houve um erro inesperado ao se comunicar com a IMPRESSOSA BEMATECH, verifique-a por favor!");
+
+        }
+
+        private void VerificaStatusImpressora()
+        {
+            MP2032.ConfiguraModeloImpressora(7); // Bematech MP-4200 TH
+            MP2032.IniciaPorta("USB");
+
+            var codigoRetorno = MP2032.Le_Status();
+            if (codigoRetorno == 0)
+            {
+                MessageBox.Show("Erro ao se comunicar com a Impressora Bematech MP-4200 TH, verifique por favor.", "** ATENÇÃO **", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (codigoRetorno == 5)
+            {
+                MessageBox.Show("Impressora com pouco papel, verifique por favor.", "** ATENÇÃO **", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (codigoRetorno == 9)
+            {
+                MessageBox.Show("Impressora com a tampa aberta, verifique por favor.", "** ATENÇÃO **", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MP2032.FechaPorta();
+                return;
+            }
+            else if (codigoRetorno == 32)
+            {
+                MessageBox.Show("Impressora sem papel, verifique por favor.", "** ATENÇÃO **", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }

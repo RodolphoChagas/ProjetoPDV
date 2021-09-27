@@ -325,7 +325,29 @@ namespace ProjetoPDVUI
 
         private void AtualizaValores(decimal valorPago = 0)
         {
-            lblTotalAPagar.Text = _pedido.ValorPedido.ToString("0.00");
+            
+            if (Convert.ToDecimal(txtDesconto.Text) > 0)
+            {
+                if (radDescDinheiro.Checked)
+                {
+                    var descontoDinheiro = Convert.ToDecimal(txtDesconto.Text);
+
+                    lblTotalAPagar.Text = (_pedido.ValorPedido - descontoDinheiro).ToString("0.00");
+                }
+                else if (radDescPorcentagem.Checked)
+                {
+                    var descontoPorcentagem = Convert.ToInt32(txtDesconto.Text);
+
+                    var valorDesconto = (descontoPorcentagem * _pedido.ValorPedido) / 100;
+
+                    lblTotalAPagar.Text = (_pedido.ValorPedido - valorDesconto).ToString("0.00");
+                }
+            }
+            else
+            {
+                lblTotalAPagar.Text = _pedido.ValorPedido.ToString("0.00");
+            }
+
             lblTotalPago.Text = (Convert.ToDecimal(lblTotalPago.Text) + valorPago).ToString("0.00");
 
             if (Convert.ToDecimal(lblTotalPago.Text) > Convert.ToDecimal(lblTotalAPagar.Text))
@@ -336,7 +358,8 @@ namespace ProjetoPDVUI
             else
             {
                 lblTroco.Text = "0,00";
-                lblFalta.Text = (_pedido.ValorPedido - Convert.ToDecimal(lblTotalPago.Text)).ToString("0.00");
+                //lblFalta.Text = (_pedido.ValorPedido - Convert.ToDecimal(lblTotalPago.Text)).ToString("0.00");
+                lblFalta.Text = (Convert.ToDecimal(lblTotalAPagar.Text) - Convert.ToDecimal(lblTotalPago.Text)).ToString("0.00");
             }
         }
 
@@ -377,6 +400,8 @@ namespace ProjetoPDVUI
 
         private void frmSelecionaPagamento1_Load(object sender, EventArgs e)
         {
+            txtDesconto.Focus();
+            txtDesconto.Select();
             AtualizaValores();
         }
 
@@ -445,7 +470,7 @@ namespace ProjetoPDVUI
                 if (GeraXml.AmbienteNFCe == "2")
                 {
                     //Salvando o arquivo XML na pasta
-                    Grava = File.CreateText(@"C:\Users\Comercial\Desktop\ASSINADO.xml");
+                    Grava = File.CreateText(@"C:\Users\Succo\Desktop\ASSINADO.xml");
                     Grava.Write(xmlNFCeAssinado.InnerXml);
                     Grava.Close();
                 }
@@ -468,6 +493,11 @@ namespace ProjetoPDVUI
                     MessageBox.Show("Erro ao tentar validar o xml da NFC-e " + Environment.NewLine + "Erro: " + ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
+
+
+                Grava = File.CreateText(@"C:\Users\Succo\Desktop\ASSINADO.xml");
+                Grava.Write(xmlNFCeAssinado.InnerXml);
+                Grava.Close();
 
                 if (retValidar == string.Empty)
                 {
@@ -683,7 +713,6 @@ namespace ProjetoPDVUI
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -699,6 +728,47 @@ namespace ProjetoPDVUI
             {
                 Close();
             }
+        }
+
+        private void txtDesconto_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (radDescDinheiro.Checked)
+                { 
+                    FormataTextBox.TextBoxMoeda(ref txtDesconto);
+                }
+                else if(radDescPorcentagem.Checked)
+                {
+                    if (txtDesconto.Text == string.Empty)
+                        txtDesconto.Text = "0";
+                }
+
+                AtualizaValores();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(@"Valor Recebido digitado incorretamente!");
+            }
+        }
+
+        private void radDescDinheiro_CheckedChanged(object sender, EventArgs e)
+        {
+            txtDesconto.Text = "0,00";
+            txtDesconto.Focus();
+            txtDesconto.Select();
+        }
+
+        private void radDescPorcentagem_CheckedChanged(object sender, EventArgs e)
+        {
+            txtDesconto.Text = "0";
+            txtDesconto.Focus();
+            txtDesconto.Select();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

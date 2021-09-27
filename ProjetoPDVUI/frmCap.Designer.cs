@@ -354,6 +354,7 @@
             this.lblSalvar.TabIndex = 222;
             this.lblSalvar.Text = "Salvar";
             this.lblSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblSalvar.Click += new System.EventHandler(this.lblSalvar_Click);
             // 
             // pictureBox3
             // 

@@ -37,6 +37,9 @@
             this.lblFecharCaixa = new System.Windows.Forms.Label();
             this.lblVoltar = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtIfood = new System.Windows.Forms.TextBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtOutros = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
@@ -70,6 +73,9 @@
             this.txtDiferença = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.txtPix = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -88,7 +94,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(112, 17);
+            this.label1.Location = new System.Drawing.Point(112, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(319, 19);
             this.label1.TabIndex = 0;
@@ -101,7 +107,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(64, 43);
+            this.label2.Location = new System.Drawing.Point(64, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(411, 39);
             this.label2.TabIndex = 1;
@@ -116,7 +122,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(82, 416);
+            this.label3.Location = new System.Drawing.Point(81, 444);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(124, 14);
             this.label3.TabIndex = 2;
@@ -130,7 +136,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(82, 529);
+            this.label4.Location = new System.Drawing.Point(81, 557);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(136, 14);
             this.label4.TabIndex = 32;
@@ -144,7 +150,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(240, 548);
+            this.label5.Location = new System.Drawing.Point(239, 576);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(193, 16);
             this.label5.TabIndex = 34;
@@ -158,7 +164,7 @@
             this.lblFecharCaixa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblFecharCaixa.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecharCaixa.ForeColor = System.Drawing.Color.White;
-            this.lblFecharCaixa.Location = new System.Drawing.Point(24, 604);
+            this.lblFecharCaixa.Location = new System.Drawing.Point(23, 605);
             this.lblFecharCaixa.Name = "lblFecharCaixa";
             this.lblFecharCaixa.Size = new System.Drawing.Size(152, 28);
             this.lblFecharCaixa.TabIndex = 209;
@@ -173,7 +179,7 @@
             this.lblVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblVoltar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVoltar.ForeColor = System.Drawing.Color.White;
-            this.lblVoltar.Location = new System.Drawing.Point(379, 604);
+            this.lblVoltar.Location = new System.Drawing.Point(378, 605);
             this.lblVoltar.Name = "lblVoltar";
             this.lblVoltar.Size = new System.Drawing.Size(152, 28);
             this.lblVoltar.TabIndex = 211;
@@ -183,6 +189,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtPix);
+            this.groupBox1.Controls.Add(this.panel13);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.txtIfood);
+            this.groupBox1.Controls.Add(this.panel12);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txtOutros);
             this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.Controls.Add(this.label12);
@@ -200,12 +212,47 @@
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(27, 99);
+            this.groupBox1.Location = new System.Drawing.Point(27, 74);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(478, 223);
+            this.groupBox1.Size = new System.Drawing.Size(478, 284);
             this.groupBox1.TabIndex = 224;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = " Detalhes das vendas do dia";
+            // 
+            // txtIfood
+            // 
+            this.txtIfood.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.txtIfood.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIfood.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIfood.ForeColor = System.Drawing.Color.White;
+            this.txtIfood.Location = new System.Drawing.Point(230, 217);
+            this.txtIfood.Name = "txtIfood";
+            this.txtIfood.Size = new System.Drawing.Size(174, 16);
+            this.txtIfood.TabIndex = 240;
+            this.txtIfood.Text = "1400,00";
+            this.txtIfood.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel12.Location = new System.Drawing.Point(216, 211);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(200, 27);
+            this.panel12.TabIndex = 241;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(66, 217);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 16);
+            this.label6.TabIndex = 239;
+            this.label6.Text = "iFood:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtOutros
             // 
@@ -399,7 +446,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.IndianRed;
             this.panel7.Controls.Add(this.txtSangrias);
-            this.panel7.Location = new System.Drawing.Point(244, 408);
+            this.panel7.Location = new System.Drawing.Point(243, 436);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(200, 27);
             this.panel7.TabIndex = 238;
@@ -408,7 +455,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.panel1.Controls.Add(this.txtDinheiroCaixa);
-            this.panel1.Location = new System.Drawing.Point(243, 520);
+            this.panel1.Location = new System.Drawing.Point(242, 548);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 27);
             this.panel1.TabIndex = 239;
@@ -445,7 +492,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel8.Controls.Add(this.txtSaldoInicial);
-            this.panel8.Location = new System.Drawing.Point(244, 341);
+            this.panel8.Location = new System.Drawing.Point(243, 369);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(200, 27);
             this.panel8.TabIndex = 241;
@@ -457,7 +504,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(82, 349);
+            this.label13.Location = new System.Drawing.Point(81, 377);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(104, 14);
             this.label13.TabIndex = 240;
@@ -471,7 +518,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(82, 383);
+            this.label14.Location = new System.Drawing.Point(81, 411);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(139, 14);
             this.label14.TabIndex = 242;
@@ -495,7 +542,7 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel9.Controls.Add(this.txtVendaDinheiro);
-            this.panel9.Location = new System.Drawing.Point(244, 375);
+            this.panel9.Location = new System.Drawing.Point(243, 403);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(200, 27);
             this.panel9.TabIndex = 243;
@@ -507,7 +554,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(82, 447);
+            this.label15.Location = new System.Drawing.Point(81, 475);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(116, 18);
             this.label15.TabIndex = 244;
@@ -531,7 +578,7 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel10.Controls.Add(this.txtSaldoFinal);
-            this.panel10.Location = new System.Drawing.Point(243, 443);
+            this.panel10.Location = new System.Drawing.Point(242, 471);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(200, 27);
             this.panel10.TabIndex = 245;
@@ -543,7 +590,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(82, 480);
+            this.label16.Location = new System.Drawing.Point(81, 508);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(82, 16);
             this.label16.TabIndex = 246;
@@ -554,7 +601,7 @@
             // 
             this.panel11.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel11.Controls.Add(this.txtDiferença);
-            this.panel11.Location = new System.Drawing.Point(243, 476);
+            this.panel11.Location = new System.Drawing.Point(242, 504);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(200, 27);
             this.panel11.TabIndex = 247;
@@ -579,7 +626,7 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(398, 599);
+            this.pictureBox2.Location = new System.Drawing.Point(397, 600);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(53, 36);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -593,19 +640,54 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 599);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 600);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(53, 36);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 210;
             this.pictureBox1.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(66, 248);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 16);
+            this.label7.TabIndex = 242;
+            this.label7.Text = "PIX:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel13.Location = new System.Drawing.Point(216, 246);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(200, 27);
+            this.panel13.TabIndex = 244;
+            // 
+            // txtPix
+            // 
+            this.txtPix.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.txtPix.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPix.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPix.ForeColor = System.Drawing.Color.White;
+            this.txtPix.Location = new System.Drawing.Point(230, 252);
+            this.txtPix.Name = "txtPix";
+            this.txtPix.Size = new System.Drawing.Size(174, 16);
+            this.txtPix.TabIndex = 245;
+            this.txtPix.Text = "1400,00";
+            this.txtPix.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // frmFechaCaixa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(543, 641);
+            this.ClientSize = new System.Drawing.Size(543, 668);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.label15);
@@ -695,5 +777,11 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.TextBox txtDiferença;
+        private System.Windows.Forms.TextBox txtIfood;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtPix;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Label label7;
     }
 }

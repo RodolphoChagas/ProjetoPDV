@@ -16,6 +16,7 @@ namespace ProjetoPDVModel
         [Column("Caminho_XMLAutorizado")]
         public string CaminhoXmlAutorizado { get; set; }
         private static ControleFiscal _instance;
+        public string TZD { get; set; }
 
         [Column("NFiscal_NFCe")]
         public int UltimaNfCe { get; set; }

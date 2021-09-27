@@ -23,6 +23,25 @@ namespace ProjetoPDVDao
 
         }
 
+
+        /// <summary>Retorna uma lista com todos os pedidos já EMITIDOS dentro do período.
+        /// </summary>
+        public List<Xml> GetXmls()
+        {
+            try
+            {
+                //dtInicial = string.Format("{0:yyyy-MM-dd 00:00:00}", dtInicial.to);
+
+
+
+                return (new PetaPoco.Database("stringConexao")).Query<Xml>("select xmlnfe.*, chave from xmlnfe inner join movdb on xmlnfe.numdoc = movdb.numdoc where nfiscal >= 1 and nfiscal <= 150 and conddoc = 'F' order by nfiscal").ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         /*
         /// <summary>
         /// Retorna uma lista com todos os arquivos XML do pedido passado por parametro.

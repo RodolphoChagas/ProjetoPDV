@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.radVisa = new System.Windows.Forms.RadioButton();
             this.radMastercard = new System.Windows.Forms.RadioButton();
-            this.radAmex = new System.Windows.Forms.RadioButton();
+            this.radIfood = new System.Windows.Forms.RadioButton();
             this.radOutros = new System.Windows.Forms.RadioButton();
             this.pnlBandeiras = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -73,6 +73,7 @@
             this.lblSalvar = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblCancelar = new System.Windows.Forms.Label();
+            this.radPix = new System.Windows.Forms.RadioButton();
             this.pnlBandeiras.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -121,7 +122,7 @@
             this.radMastercard.ForeColor = System.Drawing.Color.White;
             this.radMastercard.Image = ((System.Drawing.Image)(resources.GetObject("radMastercard.Image")));
             this.radMastercard.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.radMastercard.Location = new System.Drawing.Point(392, 40);
+            this.radMastercard.Location = new System.Drawing.Point(391, 40);
             this.radMastercard.Name = "radMastercard";
             this.radMastercard.Size = new System.Drawing.Size(190, 50);
             this.radMastercard.TabIndex = 24;
@@ -132,23 +133,22 @@
             this.radMastercard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radMastercard.UseVisualStyleBackColor = true;
             // 
-            // radAmex
+            // radIfood
             // 
-            this.radAmex.AutoSize = true;
-            this.radAmex.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radAmex.ForeColor = System.Drawing.Color.White;
-            this.radAmex.Image = ((System.Drawing.Image)(resources.GetObject("radAmex.Image")));
-            this.radAmex.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.radAmex.Location = new System.Drawing.Point(119, 96);
-            this.radAmex.Name = "radAmex";
-            this.radAmex.Size = new System.Drawing.Size(142, 50);
-            this.radAmex.TabIndex = 25;
-            this.radAmex.TabStop = true;
-            this.radAmex.Tag = "AMEX";
-            this.radAmex.Text = "  [X] AMEX";
-            this.radAmex.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radAmex.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.radAmex.UseVisualStyleBackColor = true;
+            this.radIfood.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radIfood.ForeColor = System.Drawing.Color.White;
+            this.radIfood.Image = ((System.Drawing.Image)(resources.GetObject("radIfood.Image")));
+            this.radIfood.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.radIfood.Location = new System.Drawing.Point(119, 105);
+            this.radIfood.Name = "radIfood";
+            this.radIfood.Size = new System.Drawing.Size(143, 35);
+            this.radIfood.TabIndex = 25;
+            this.radIfood.TabStop = true;
+            this.radIfood.Tag = "IFOOD";
+            this.radIfood.Text = "  [X] iFood";
+            this.radIfood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.radIfood.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radIfood.UseVisualStyleBackColor = true;
             // 
             // radOutros
             // 
@@ -157,7 +157,7 @@
             this.radOutros.ForeColor = System.Drawing.Color.White;
             this.radOutros.Image = ((System.Drawing.Image)(resources.GetObject("radOutros.Image")));
             this.radOutros.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.radOutros.Location = new System.Drawing.Point(392, 96);
+            this.radOutros.Location = new System.Drawing.Point(391, 96);
             this.radOutros.Name = "radOutros";
             this.radOutros.Size = new System.Drawing.Size(158, 50);
             this.radOutros.TabIndex = 26;
@@ -167,15 +167,17 @@
             this.radOutros.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radOutros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.radOutros.UseVisualStyleBackColor = true;
+            this.radOutros.CheckedChanged += new System.EventHandler(this.radOutros_CheckedChanged);
             // 
             // pnlBandeiras
             // 
             this.pnlBandeiras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlBandeiras.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlBandeiras.Controls.Add(this.radPix);
             this.pnlBandeiras.Controls.Add(this.label5);
             this.pnlBandeiras.Controls.Add(this.txtNumAutorizacao);
             this.pnlBandeiras.Controls.Add(this.radOutros);
-            this.pnlBandeiras.Controls.Add(this.radAmex);
+            this.pnlBandeiras.Controls.Add(this.radIfood);
             this.pnlBandeiras.Controls.Add(this.radMastercard);
             this.pnlBandeiras.Controls.Add(this.radVisa);
             this.pnlBandeiras.Controls.Add(this.label2);
@@ -183,6 +185,7 @@
             this.pnlBandeiras.Name = "pnlBandeiras";
             this.pnlBandeiras.Size = new System.Drawing.Size(628, 222);
             this.pnlBandeiras.TabIndex = 34;
+            this.pnlBandeiras.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBandeiras_Paint);
             // 
             // label5
             // 
@@ -203,7 +206,7 @@
             this.txtNumAutorizacao.ForeColor = System.Drawing.Color.White;
             this.txtNumAutorizacao.Location = new System.Drawing.Point(129, 179);
             this.txtNumAutorizacao.Name = "txtNumAutorizacao";
-            this.txtNumAutorizacao.Size = new System.Drawing.Size(223, 26);
+            this.txtNumAutorizacao.Size = new System.Drawing.Size(195, 26);
             this.txtNumAutorizacao.TabIndex = 37;
             // 
             // panel3
@@ -646,6 +649,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 171;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // lblSalvar
             // 
@@ -690,6 +694,25 @@
             this.lblCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblCancelar.Click += new System.EventHandler(this.lblCancelar_Click);
             // 
+            // radPix
+            // 
+            this.radPix.AutoSize = true;
+            this.radPix.Enabled = false;
+            this.radPix.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radPix.ForeColor = System.Drawing.Color.White;
+            this.radPix.Image = ((System.Drawing.Image)(resources.GetObject("radPix.Image")));
+            this.radPix.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.radPix.Location = new System.Drawing.Point(391, 155);
+            this.radPix.Name = "radPix";
+            this.radPix.Size = new System.Drawing.Size(129, 50);
+            this.radPix.TabIndex = 39;
+            this.radPix.TabStop = true;
+            this.radPix.Tag = "PIX";
+            this.radPix.Text = "  [P] PIX";
+            this.radPix.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.radPix.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.radPix.UseVisualStyleBackColor = true;
+            // 
             // frmInformaPagamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -728,7 +751,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton radVisa;
         private System.Windows.Forms.RadioButton radMastercard;
-        private System.Windows.Forms.RadioButton radAmex;
+        private System.Windows.Forms.RadioButton radIfood;
         private System.Windows.Forms.RadioButton radOutros;
         private System.Windows.Forms.Panel pnlBandeiras;
         private System.Windows.Forms.Label label5;
@@ -769,5 +792,6 @@
         private System.Windows.Forms.Label lblSalvar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblCancelar;
+        private System.Windows.Forms.RadioButton radPix;
     }
 }

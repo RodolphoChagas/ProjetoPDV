@@ -333,7 +333,7 @@ namespace ProjetoPDVUI
                 //Valor Total final
                 lstVWItens.SelectedItems[0].SubItems[4].Text = (valorTotalFinal).ToString("0.00");
 
-                AtualizaValorTotalEQuantidadeDeItens(valorProduto * quantidade, 1 * quantidade);
+                AtualizaValorTotalEQuantidadeDeItens(valorProduto, 1 * quantidade);
             }
             catch (Exception)
             {

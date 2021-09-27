@@ -71,6 +71,7 @@
             this.DANFEtoolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.históricoDeCaixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stbPrincipal = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.ToolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -80,7 +81,6 @@
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel7 = new System.Windows.Forms.ToolStripStatusLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.históricoDeCaixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.menuPrincipal.SuspendLayout();
             this.stbPrincipal.SuspendLayout();
@@ -283,6 +283,7 @@
             this.cancelarNFeToolStripMenuItem.Name = "cancelarNFeToolStripMenuItem";
             this.cancelarNFeToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.cancelarNFeToolStripMenuItem.Text = "&Cancelar NFC-e";
+            this.cancelarNFeToolStripMenuItem.Click += new System.EventHandler(this.cancelarNFeToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -398,6 +399,7 @@
             this.contasAPagarToolStripMenuItem.Name = "contasAPagarToolStripMenuItem";
             this.contasAPagarToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.contasAPagarToolStripMenuItem.Text = "Contas a Pagar";
+            this.contasAPagarToolStripMenuItem.Click += new System.EventHandler(this.contasAPagarToolStripMenuItem_Click);
             // 
             // categoriasDeContasToolStripMenuItem
             // 
@@ -454,6 +456,13 @@
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
             this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ajudaToolStripMenuItem.Text = "CAIXA";
+            // 
+            // históricoDeCaixaToolStripMenuItem
+            // 
+            this.históricoDeCaixaToolStripMenuItem.Name = "históricoDeCaixaToolStripMenuItem";
+            this.históricoDeCaixaToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.históricoDeCaixaToolStripMenuItem.Text = "Histórico do Caixa";
+            this.históricoDeCaixaToolStripMenuItem.Click += new System.EventHandler(this.históricoDeCaixaToolStripMenuItem_Click);
             // 
             // stbPrincipal
             // 
@@ -565,13 +574,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 86;
             this.pictureBox1.TabStop = false;
-            // 
-            // históricoDeCaixaToolStripMenuItem
-            // 
-            this.históricoDeCaixaToolStripMenuItem.Name = "históricoDeCaixaToolStripMenuItem";
-            this.históricoDeCaixaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.históricoDeCaixaToolStripMenuItem.Text = "Histórico do Caixa";
-            this.históricoDeCaixaToolStripMenuItem.Click += new System.EventHandler(this.históricoDeCaixaToolStripMenuItem_Click);
             // 
             // frmMenuPrincipal
             // 

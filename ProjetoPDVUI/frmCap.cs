@@ -1,13 +1,6 @@
 ﻿using ProjetoPDVDao;
 using ProjetoPDVModel;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjetoPDVUI
@@ -80,6 +73,11 @@ namespace ProjetoPDVUI
                 lstVwCategorias.Height = 23;
             else
                 lstVwCategorias.Height = 105;
+        }
+
+        private void lblSalvar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

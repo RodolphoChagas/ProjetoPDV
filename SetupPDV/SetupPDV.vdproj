@@ -33,6 +33,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_057441B643E5C5F915C7848DFD46FB23"
+        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_063966102D59428EAE33FC8C25C17882"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -159,24 +165,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_2C4BF235AD3FED6288C61A6A29A3037B"
-        "OwnerKey" = "8:_32ADD7115D48DE7635B9D86C3980227E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_2C4BF235AD3FED6288C61A6A29A3037B"
-        "OwnerKey" = "8:_6C0CF382D3FB47E1B4DCF810EF9AE9FE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_2C4BF235AD3FED6288C61A6A29A3037B"
-        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_2C9200666A7B44E9A639D591E895E068"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -215,18 +203,6 @@
         {
         "MsmKey" = "8:_32623949608549FAA0A18D00B8086FEA"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_32ADD7115D48DE7635B9D86C3980227E"
-        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_35015A2F67A5B8B505B017C0192869F1"
-        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -291,6 +267,48 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_488170B4ACBFE6F4C4BD1DF0433931C3"
+        "OwnerKey" = "8:_BECBA02AD329083B8053209B45555427"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_488170B4ACBFE6F4C4BD1DF0433931C3"
+        "OwnerKey" = "8:_FB9D495690964C5BB33B07B5DE0CB37F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_488170B4ACBFE6F4C4BD1DF0433931C3"
+        "OwnerKey" = "8:_D20CA467201F4BD3BFEE6D14CE4C5461"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_488170B4ACBFE6F4C4BD1DF0433931C3"
+        "OwnerKey" = "8:_6C0CF382D3FB47E1B4DCF810EF9AE9FE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_488170B4ACBFE6F4C4BD1DF0433931C3"
+        "OwnerKey" = "8:_E726263DCA2D2EEE6D981926DBF81D22"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_488170B4ACBFE6F4C4BD1DF0433931C3"
+        "OwnerKey" = "8:_915037586BEDCF99DA1B48C943EDEA38"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_488170B4ACBFE6F4C4BD1DF0433931C3"
+        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_48C3375DBCB6412D94BB449CA3E7C810"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -341,6 +359,12 @@
         {
         "MsmKey" = "8:_5764B8BCB7B14FC7A8B100B543F66984"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_595A29A45BCA76FA96907645CA4F04A2"
+        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -525,6 +549,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_915037586BEDCF99DA1B48C943EDEA38"
+        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_91BD793CA8C94578B715B3252A5BE661"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -551,48 +581,6 @@
         {
         "MsmKey" = "8:_932814BD874E47EFBFBE156BA3284E1C"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
-        "OwnerKey" = "8:_D0A62835D18739756A539E26319D6C10"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
-        "OwnerKey" = "8:_FB9D495690964C5BB33B07B5DE0CB37F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
-        "OwnerKey" = "8:_D20CA467201F4BD3BFEE6D14CE4C5461"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
-        "OwnerKey" = "8:_6C0CF382D3FB47E1B4DCF810EF9AE9FE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
-        "OwnerKey" = "8:_2C4BF235AD3FED6288C61A6A29A3037B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
-        "OwnerKey" = "8:_32ADD7115D48DE7635B9D86C3980227E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
-        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -641,12 +629,6 @@
         {
         "MsmKey" = "8:_9C93D2D1B1804F66B1961868B98971D5"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_9D711D3A8E4268211C2B0F878AE5685B"
-        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -735,6 +717,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_BECBA02AD329083B8053209B45555427"
+        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_C5BA7FE2CE1449A2B2B90AD1EE8B3586"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -767,12 +755,6 @@
         {
         "MsmKey" = "8:_D025314CB5C94183AA77A9B95BF79F4F"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_D0A62835D18739756A539E26319D6C10"
-        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -855,6 +837,36 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_E726263DCA2D2EEE6D981926DBF81D22"
+        "OwnerKey" = "8:_915037586BEDCF99DA1B48C943EDEA38"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E726263DCA2D2EEE6D981926DBF81D22"
+        "OwnerKey" = "8:_6C0CF382D3FB47E1B4DCF810EF9AE9FE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E726263DCA2D2EEE6D981926DBF81D22"
+        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E9D3D29CEBDA49B0A0D5C7542569691C"
+        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_EA25C887A03C4579B3C8DC35E750781F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_EB6079DE00994D95B01842A36FF757EC"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -875,12 +887,6 @@
         {
         "MsmKey" = "8:_F1CBCEA294454B85BCAD071A2307947C"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F66C11520DA91936EEC275F8CA23EC39"
-        "OwnerKey" = "8:_16538FCF5ADC4226AE988CC0B12A9EF3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -970,43 +976,43 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F66C11520DA91936EEC275F8CA23EC39"
+        "OwnerKey" = "8:_057441B643E5C5F915C7848DFD46FB23"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_32ADD7115D48DE7635B9D86C3980227E"
+        "OwnerKey" = "8:_915037586BEDCF99DA1B48C943EDEA38"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2C4BF235AD3FED6288C61A6A29A3037B"
+        "OwnerKey" = "8:_E726263DCA2D2EEE6D981926DBF81D22"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D0A62835D18739756A539E26319D6C10"
+        "OwnerKey" = "8:_BECBA02AD329083B8053209B45555427"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_96C86E6CD08B255C7B2C2FADB2969CAD"
+        "OwnerKey" = "8:_488170B4ACBFE6F4C4BD1DF0433931C3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9D711D3A8E4268211C2B0F878AE5685B"
+        "OwnerKey" = "8:_E9D3D29CEBDA49B0A0D5C7542569691C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_35015A2F67A5B8B505B017C0192869F1"
+        "OwnerKey" = "8:_595A29A45BCA76FA96907645CA4F04A2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1040,6 +1046,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
         "Release"
@@ -1064,6 +1078,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
     }
@@ -1152,6 +1174,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_057441B643E5C5F915C7848DFD46FB23"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:TabControlEX, Version=0.0.3271.41578, Culture=neutral, PublicKeyToken=1db242dc828e4b4e"
+                "ScatterAssemblies"
+                {
+                    "_057441B643E5C5F915C7848DFD46FB23"
+                    {
+                    "Name" = "8:TabControlEX.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:TabControlEX.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_063966102D59428EAE33FC8C25C17882"
@@ -1596,37 +1649,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2C4BF235AD3FED6288C61A6A29A3037B"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProjetoPDVUtil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_2C4BF235AD3FED6288C61A6A29A3037B"
-                    {
-                    "Name" = "8:ProjetoPDVUtil.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:ProjetoPDVUtil.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2C9200666A7B44E9A639D591E895E068"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\Imagens\\ffff.jpg"
@@ -1765,68 +1787,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_32ADD7115D48DE7635B9D86C3980227E"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProjetoPDVServico, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_32ADD7115D48DE7635B9D86C3980227E"
-                    {
-                    "Name" = "8:ProjetoPDVServico.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:ProjetoPDVServico.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_35015A2F67A5B8B505B017C0192869F1"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:BuscaCEP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_35015A2F67A5B8B505B017C0192869F1"
-                    {
-                    "Name" = "8:BuscaCEP.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:BuscaCEP.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_353020BE6EC9492AA5B214A76B3196D7"
@@ -2029,6 +1989,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_488170B4ACBFE6F4C4BD1DF0433931C3"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ProjetoPDVModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_488170B4ACBFE6F4C4BD1DF0433931C3"
+                    {
+                    "Name" = "8:ProjetoPDVModel.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ProjetoPDVModel.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_48C3375DBCB6412D94BB449CA3E7C810"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\SiUSBXp.dll"
@@ -2207,6 +2198,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_595A29A45BCA76FA96907645CA4F04A2"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:BuscaCEP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_595A29A45BCA76FA96907645CA4F04A2"
+                    {
+                    "Name" = "8:BuscaCEP.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:BuscaCEP.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5A8ED3B2D03B4AE79ED3CB229B790171"
@@ -2842,6 +2864,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_915037586BEDCF99DA1B48C943EDEA38"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ProjetoPDVServico, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_915037586BEDCF99DA1B48C943EDEA38"
+                    {
+                    "Name" = "8:ProjetoPDVServico.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ProjetoPDVServico.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_91BD793CA8C94578B715B3252A5BE661"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\Imagens\\imprimir.png"
@@ -2940,37 +2993,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_96C86E6CD08B255C7B2C2FADB2969CAD"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProjetoPDVModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_96C86E6CD08B255C7B2C2FADB2969CAD"
-                    {
-                    "Name" = "8:ProjetoPDVModel.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:ProjetoPDVModel.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_985346F5627C4927A0B36EF763C3BD23"
@@ -3131,37 +3153,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9D711D3A8E4268211C2B0F878AE5685B"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_9D711D3A8E4268211C2B0F878AE5685B"
-                    {
-                    "Name" = "8:Microsoft.VisualBasic.PowerPacks.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Microsoft.VisualBasic.PowerPacks.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9E53BF3A016E4DB198E536A52A7A845A"
@@ -3444,6 +3435,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_BECBA02AD329083B8053209B45555427"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ProjetoPDVDao, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_BECBA02AD329083B8053209B45555427"
+                    {
+                    "Name" = "8:ProjetoPDVDao.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ProjetoPDVDao.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C5BA7FE2CE1449A2B2B90AD1EE8B3586"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\ESQUEMA\\NFe4\\leiauteNFe_v4.00.xsd"
@@ -3562,37 +3584,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D0A62835D18739756A539E26319D6C10"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ProjetoPDVDao, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_D0A62835D18739756A539E26319D6C10"
-                    {
-                    "Name" = "8:ProjetoPDVDao.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:ProjetoPDVDao.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D20CA467201F4BD3BFEE6D14CE4C5461"
@@ -3866,6 +3857,88 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E726263DCA2D2EEE6D981926DBF81D22"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ProjetoPDVUtil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_E726263DCA2D2EEE6D981926DBF81D22"
+                    {
+                    "Name" = "8:ProjetoPDVUtil.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ProjetoPDVUtil.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E9D3D29CEBDA49B0A0D5C7542569691C"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_E9D3D29CEBDA49B0A0D5C7542569691C"
+                    {
+                    "Name" = "8:Microsoft.VisualBasic.PowerPacks.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.VisualBasic.PowerPacks.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EA25C887A03C4579B3C8DC35E750781F"
+            {
+            "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\Imagens\\ifood-logo-16.png"
+            "TargetName" = "8:ifood-logo-16.png"
+            "Tag" = "8:"
+            "Folder" = "8:_8B8B40D1CC9D4C70A5E7EE23C0350BA9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EB6079DE00994D95B01842A36FF757EC"
             {
             "SourcePath" = "8:..\\ProjetoPDVUI\\bin\\Debug\\Imagens\\user_add.png"
@@ -3944,37 +4017,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F66C11520DA91936EEC275F8CA23EC39"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:TabControlEX, Version=0.0.3271.41578, Culture=neutral, PublicKeyToken=1db242dc828e4b4e"
-                "ScatterAssemblies"
-                {
-                    "_F66C11520DA91936EEC275F8CA23EC39"
-                    {
-                    "Name" = "8:TabControlEX.DLL"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:TabControlEX.DLL"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_D76EA6E919E34CE9905F12B5D0167EC6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F77872E0D3994EB4BA794BA45C5D8C96"
@@ -4249,7 +4291,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SetupPDV"
         "ProductCode" = "8:{788AF7B5-435F-4D30-9B4E-E5790C945345}"
-        "PackageCode" = "8:{26B4296C-9E53-47C1-B591-0064AA56383E}"
+        "PackageCode" = "8:{0F4886CF-142E-4027-8130-F295B6253820}"
         "UpgradeCode" = "8:{89E2473E-43DE-4D18-A4A9-5A8A55C2CBC3}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

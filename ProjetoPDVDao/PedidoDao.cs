@@ -87,6 +87,24 @@ namespace ProjetoPDVDao
 
         /// <summary>Retorna uma lista com todos os pedidos já EMITIDOS dentro do período.
         /// </summary>
+        public List<Pedido> GetPedidosEmitidos(string dtInicial, string dtFinal)
+        {
+            try
+            {
+                //dtInicial = string.Format("{0:yyyy-MM-dd 00:00:00}", dtInicial.to);
+
+
+
+                return (new PetaPoco.Database("stringConexao")).Query<Pedido>("SELECT Movdb.* FROM Movdb INNER JOIN Operacao ON Movdb.operacao_id = Operacao.operacao_id WHERE VND <> 0 AND NFISCAL <> 0 AND CondDoc in('F') And (data_digitacao Between '" + dtInicial + "' And '" + dtFinal + "') ORDER BY data_digitacao").ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        /// <summary>Retorna uma lista com todos os pedidos já EMITIDOS dentro do período.
+        /// </summary>
         public List<Pedido> GetPedidosDoCaixa(DateTime dtInicial, DateTime dtFinal)
         {
             try

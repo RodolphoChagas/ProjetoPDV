@@ -43,6 +43,8 @@ namespace ProjetoPDVUI
         {
             lstVwPedidos.Items.Clear();
 
+            var valorTotal = 0m;
+
             foreach (var pedido in pedidos)
             {
                 pedido.Cliente = (new ClienteDao()).GetClientePorPedido(pedido.NumDoc);
@@ -57,6 +59,8 @@ namespace ProjetoPDVUI
                 ls.SubItems.Add(pedido.DataNFiscal.ToString());
                 ls.SubItems.Add(pedido.ValorPedido.ToString("0.00"));
 
+                valorTotal += pedido.ValorPedido;
+
                 if (pedido.NFiscal != 0)
                 {
                     ls.ForeColor = Color.OliveDrab;
@@ -64,6 +68,8 @@ namespace ProjetoPDVUI
 
                 lstVwPedidos.Items.Add(ls);
             }
+
+            lblValorTotal.Text = valorTotal.ToString("0.00");
         }
 
 
@@ -84,7 +90,11 @@ namespace ProjetoPDVUI
 
         private void lblPesquisar_Click(object sender, EventArgs e)
         {
-            _pedidos = (new PedidoDao()).GetPedidosDoCaixa(dataInicial.Value.ToString("yyyy-MM-dd 00:00:00"), dataFinal.Value.ToString("yyyy-MM-dd 23:59:59"));
+                       
+            if(radTodos.Checked) 
+                _pedidos = (new PedidoDao()).GetPedidosDoCaixa(dataInicial.Value.ToString("yyyy-MM-dd 00:00:00"), dataFinal.Value.ToString("yyyy-MM-dd 23:59:59"));
+            if (radPago.Checked)
+                _pedidos = (new PedidoDao()).GetPedidosEmitidos(dataInicial.Value.ToString("yyyy-MM-dd 00:00:00"), dataFinal.Value.ToString("yyyy-MM-dd 23:59:59"));
 
             ListaPedidos(_pedidos);
         }

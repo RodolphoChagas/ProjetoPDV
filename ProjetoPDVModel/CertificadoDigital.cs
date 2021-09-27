@@ -64,45 +64,33 @@ namespace ProjetoPDVModel
         {
             try
             {
-                
-                oCertificado = new X509Certificate2(@"C:\SISTEMAS\Certificado\Succo.pfx", "succo1", X509KeyStorageFlags.Exportable);
-                //(@"C:\SISTEMAS\Certificado\Succo.pfx", "succo1", X509KeyStorageFlags.Exportable);
 
+                //oCertificado = new X509Certificate2(@"C:\SISTEMAS\Certificado\SuccoNovo.pfx", "123456", X509KeyStorageFlags.Exportable);
+                ////(@"C:\SISTEMAS\Certificado\Succo.pfx", "succo1", X509KeyStorageFlags.Exportable);
+
+                //_sSubject = oCertificado.Subject;
+                //_dValidadeInicial = oCertificado.NotBefore;
+                //_dValidadeFinal = oCertificado.NotAfter;
+
+
+
+
+                _oCertificado = new X509Certificate2();
+                X509Store store = new X509Store("MY", StoreLocation.CurrentUser);
+
+                store.Open(OpenFlags.ReadOnly | OpenFlags.OpenExistingOnly);
+
+                X509Certificate2Collection collection = store.Certificates;
+                X509Certificate2Collection collection1 = (collection.Find(X509FindType.FindByTimeValid, DateTime.Now, false));
+                X509Certificate2Collection collection2 = (collection.Find(X509FindType.FindByKeyUsage, X509KeyUsageFlags.DigitalSignature, false));
+
+
+                _oCertificado = store.Certificates[1];
                 _sSubject = oCertificado.Subject;
                 _dValidadeInicial = oCertificado.NotBefore;
                 _dValidadeFinal = oCertificado.NotAfter;
 
-                
 
-
-                //_oCertificado = new X509Certificate2();
-                //X509Store store = new X509Store("MY", StoreLocation.CurrentUser);
-
-                //store.Open(OpenFlags.ReadOnly | OpenFlags.OpenExistingOnly);
-
-                //X509Certificate2Collection collection = store.Certificates;
-                //X509Certificate2Collection collection1 = (collection.Find(X509FindType.FindByTimeValid, DateTime.Now, false));
-                //X509Certificate2Collection collection2 = (collection.Find(X509FindType.FindByKeyUsage, X509KeyUsageFlags.DigitalSignature, false));
-
-
-                //_oCertificado = store.Certificates[1];
-                //_sSubject = oCertificado.Subject;
-                //_dValidadeInicial = oCertificado.NotBefore;
-                //_dValidadeFinal = oCertificado.NotAfter;
-
-
-                //_oCertificado = new X509Certificate2();
-                //X509Store store = new X509Store("MY", StoreLocation.CurrentUser);
-                //store.Open(OpenFlags.ReadOnly | OpenFlags.OpenExistingOnly);
-
-                //X509Certificate2Collection collection = store.Certificates;
-                //X509Certificate2Collection collection1 = (collection.Find(X509FindType.FindByTimeValid, DateTime.Now, false));
-                //X509Certificate2Collection collection2 = (collection.Find(X509FindType.FindByKeyUsage, X509KeyUsageFlags.DigitalSignature, false));
-
-                //_oCertificado = store.Certificates[1];
-                //_sSubject = oCertificado.Subject;
-                //_dValidadeInicial = oCertificado.NotBefore;
-                //_dValidadeFinal = oCertificado.NotAfter;
 
             }
             catch (Exception)

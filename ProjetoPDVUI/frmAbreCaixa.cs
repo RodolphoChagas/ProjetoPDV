@@ -4,7 +4,6 @@ using ProjetoPDVModel;
 using ProjetoPDVDao;
 using System.Drawing;
 using PetaPoco;
-using System.Collections.Generic;
 
 namespace ProjetoPDVUI
 {
@@ -72,58 +71,83 @@ namespace ProjetoPDVUI
             var totalCredito = 0m;
             var totalDebito = 0m;
             var totalOutros = 0m;
+            var totalPix = 0m;
             var totalDespesas = 0m;
+
+            var totalIfood = 0m;
 
             _countPedidosDoDia = 0;
 
             var pedidosDoDia = (new PedidoDao()).GetPedidos(_dataDoDia, _dataDoDia);
 
-            foreach (Pedido pedido in pedidosDoDia)
+
+            var pedidoo = 1;
+
+            try
             {
-                pedido.Operacao = (new OperacaoDao()).GetOperacaoPorPedido(pedido.NumDoc);
-                pedido.Pagamentos = (new TipoPagamentoDao()).GetPagametosDoPedido(pedido.NumDoc);
+                
 
-                var ls = new ListViewItem(pedido.NumDoc.ToString());
-                ls.UseItemStyleForSubItems = false;
-                ls.SubItems.Add(pedido.DataDigitacao.ToString());
 
-                ls.SubItems.Add(pedido.Operacao.AbreCaixa == 1 ? "SALDO INICIAL" : pedido.Operacao.Nome);
-                ls.SubItems.Add(pedido.Operacao.Caixa == 1 ? pedido.ValorPedido.ToString("0.00") : "").ForeColor = Color.MediumBlue;
-                ls.SubItems.Add(pedido.Operacao.Caixa == -1 ? pedido.ValorPedido.ToString("0.00") : "").ForeColor = Color.Red;
 
-                foreach (TipoPagamento pagamento in pedido.Pagamentos)
+                foreach (Pedido pedido in pedidosDoDia)
                 {
-                    ls.SubItems.Add(pedido.Pagamentos.Count == 1 ? pagamento.Descricao: "Dinheiro/Cartão");
-                    ls.SubItems.Add(pedido.Operacao.VND.ToString());
-                    
-                    if (pedido.Operacao.VND == 1)
-                    {
-                        if (pagamento.CodigoNFCe.Equals(1))
-                            totalDinheiro += (pagamento.ValorPago - pedido.Troco);
-                        else if (pagamento.CodigoNFCe.Equals(3))
-                            totalCredito += pagamento.ValorPago;
-                        else if (pagamento.CodigoNFCe.Equals(4))
-                            totalDebito += pagamento.ValorPago;
-                        else if (pagamento.CodigoNFCe.Equals(99))
-                            totalOutros += pagamento.ValorPago;
+                    pedidoo = pedido.NumDoc;
 
-                        _countPedidosDoDia += 1;
+                    pedido.Operacao = (new OperacaoDao()).GetOperacaoPorPedido(pedido.NumDoc);
+                    pedido.Pagamentos = (new TipoPagamentoDao()).GetPagametosDoPedido(pedido.NumDoc);
+
+                    var ls = new ListViewItem(pedido.NumDoc.ToString());
+                    ls.UseItemStyleForSubItems = false;
+                    ls.SubItems.Add(pedido.DataDigitacao.ToString());
+
+                    ls.SubItems.Add(pedido.Operacao.AbreCaixa == 1 ? "SALDO INICIAL" : pedido.Operacao.Nome);
+                    ls.SubItems.Add(pedido.Operacao.Caixa == 1 ? pedido.ValorPedido.ToString("0.00") : "").ForeColor = Color.MediumBlue;
+                    ls.SubItems.Add(pedido.Operacao.Caixa == -1 ? pedido.ValorPedido.ToString("0.00") : "").ForeColor = Color.Red;
+
+                    foreach (TipoPagamento pagamento in pedido.Pagamentos)
+                    {
+                        ls.SubItems.Add(pedido.Pagamentos.Count == 1 ? pagamento.Descricao : "Dinheiro/Cartão");
+                        ls.SubItems.Add(pedido.Operacao.VND.ToString());
+
+                        if (pedido.Operacao.VND == 1)
+                        {
+                            if (pagamento.CodigoNFCe.Equals(1))
+                                totalDinheiro += (pagamento.ValorPago - pedido.Troco);
+                            else if ((pagamento.CodigoNFCe.Equals(3)) && (pagamento.Descricao != "iFood"))
+                                totalCredito += pagamento.ValorPago;
+                            else if (pagamento.CodigoNFCe.Equals(4))
+                                totalDebito += pagamento.ValorPago;
+                            else if (pagamento.CodigoNFCe.Equals(99))
+                                totalOutros += pagamento.ValorPago;
+                            else if (pagamento.CodigoNFCe.Equals(17))
+                                totalPix += pagamento.ValorPago;
+                            else if (pagamento.Descricao.Equals("iFood"))
+                                totalIfood += pagamento.ValorPago;
+
+                            _countPedidosDoDia += 1;
+                        }
+
+                        if (pedido.Operacao.Caixa == -1)
+                            totalDespesas += pagamento.ValorPago;
+
+                        if (pedido.Operacao.OperacaoId == 4)
+                            totalAcrescimos += pagamento.ValorPago;
                     }
 
-                    if (pedido.Operacao.Caixa == -1)
-                        totalDespesas += pagamento.ValorPago;
-
-                    if (pedido.Operacao.OperacaoId == 4)
-                        totalAcrescimos += pagamento.ValorPago;
+                    lstvwMovimentacao.Items.Add(ls);
                 }
 
-                lstvwMovimentacao.Items.Add(ls);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Houve um erro inesperado ao listar a movimentação, tente novamente ou entre em contato com o administrador do sistena." + Environment.NewLine + "Erro: " + ex.Message + pedidoo.ToString());
             }
 
-            Lista_Saldos(totalDinheiro, totalCredito, totalDebito, totalOutros, totalAcrescimos, totalDespesas);
+
+            Lista_Saldos(totalDinheiro, totalCredito, totalDebito, totalOutros, totalAcrescimos, totalDespesas, totalIfood, totalPix);
         }
 
-        private void Lista_Saldos(decimal totalDinheiro, decimal totalCredito, decimal totalDebito, decimal totalOutros, decimal totalAcrescimos, decimal totalDespesas)
+        private void Lista_Saldos(decimal totalDinheiro, decimal totalCredito, decimal totalDebito, decimal totalOutros, decimal totalAcrescimos, decimal totalDespesas, decimal totalIfood, decimal totalPix)
         {
             lblSaldoInicial.Text = txtValor.Text.Trim();
 
@@ -132,15 +156,17 @@ namespace ProjetoPDVUI
             lblDinheiro.Text = totalDinheiro.ToString("0.00");
             lblCartaoDebito.Text = totalDebito.ToString("0.00");
             lblCartaoCredito.Text = totalCredito.ToString("0.00");
+            lbliFood.Text = totalIfood.ToString("0.00");
             lblOutros.Text = totalOutros.ToString("0.00");
+            lblPix.Text = totalPix.ToString("0.00");
 
-            lblTotal.Text = (totalDinheiro + totalDebito + totalCredito + totalOutros).ToString("0.00");
-            lblTotalMaisAcrescimos.Text = (totalAcrescimos + totalDinheiro + totalDebito + totalCredito + totalOutros).ToString("0.00");
+            lblTotal.Text = (totalDinheiro + totalDebito + totalCredito + totalOutros + totalIfood + totalPix).ToString("0.00");
+            lblTotalMaisAcrescimos.Text = (totalAcrescimos + totalDinheiro + totalDebito + totalCredito + totalOutros + totalIfood + totalPix).ToString("0.00");
 
             lblSangria.Text = totalDespesas.ToString("0.00");
 
             lblSomenteDinheiro.Text = ((Convert.ToDecimal(lblSaldoInicial.Text) + totalAcrescimos + totalDinheiro) - totalDespesas).ToString("0.00");
-            lblTudo.Text = ((Convert.ToDecimal(lblSaldoInicial.Text) + totalAcrescimos + totalDinheiro + totalDebito + totalCredito + totalOutros) - totalDespesas).ToString("0.00");
+            lblTudo.Text = ((Convert.ToDecimal(lblSaldoInicial.Text) + totalAcrescimos + totalDinheiro + totalDebito + totalCredito + totalOutros + totalIfood + totalPix) - totalDespesas).ToString("0.00");
         }
 
         private void btnLancamento_Click(object sender, EventArgs e)
@@ -246,7 +272,7 @@ namespace ProjetoPDVUI
 
         private void lblFecharCaixa_Click(object sender, EventArgs e)
         {
-            var frm = new frmFechaCaixa(Convert.ToDecimal(lblSaldoInicial.Text), Convert.ToDecimal(lblTotal.Text), Convert.ToDecimal(lblDinheiro.Text), Convert.ToDecimal(lblCartaoCredito.Text), Convert.ToDecimal(lblCartaoDebito.Text), Convert.ToDecimal(lblOutros.Text), Convert.ToDecimal(lblSangria.Text), Convert.ToDecimal(lblSomenteDinheiro.Text), _countPedidosDoDia);
+            var frm = new frmFechaCaixa(Convert.ToDecimal(lblSaldoInicial.Text), Convert.ToDecimal(lblTotal.Text), Convert.ToDecimal(lblDinheiro.Text), Convert.ToDecimal(lblCartaoCredito.Text), Convert.ToDecimal(lblCartaoDebito.Text), Convert.ToDecimal(lblOutros.Text), Convert.ToDecimal(lbliFood.Text), Convert.ToDecimal(lblPix.Text), Convert.ToDecimal(lblSangria.Text), Convert.ToDecimal(lblSomenteDinheiro.Text), _countPedidosDoDia);
             frm.ShowDialog();
         }
 
@@ -269,6 +295,11 @@ namespace ProjetoPDVUI
         private void lblSair_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

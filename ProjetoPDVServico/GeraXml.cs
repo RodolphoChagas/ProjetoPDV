@@ -211,7 +211,7 @@ namespace ProjetoPDVServico
                 xmlNohInformacoes.AppendChild(elemento(xml, "tpAmb", _AmbienteNFCe));
                 xmlNohInformacoes.AppendChild(elemento(xml, "CNPJ", Emitente.GetInstancia.Cnpj));
                 xmlNohInformacoes.AppendChild(elemento(xml, "chNFe", pedido.Chave));
-                xmlNohInformacoes.AppendChild(elemento(xml, "dhEvento", DateTime.Now.ToString("yyyy-MM-dd'T'HH:mm:ss'-03:00'")));
+                xmlNohInformacoes.AppendChild(elemento(xml, "dhEvento", DateTime.Now.ToString("yyyy-MM-dd'T'HH:mm:ss'-02:00'")));
                 xmlNohInformacoes.AppendChild(elemento(xml, "tpEvento", "110111"));
                 xmlNohInformacoes.AppendChild(elemento(xml, "nSeqEvento", "1"));
                 xmlNohInformacoes.AppendChild(elemento(xml, "verEvento", "1.00"));
@@ -320,7 +320,22 @@ namespace ProjetoPDVServico
                 detPag.AppendChild(elemento(xml, "indPag", p.Operacao.TV.ToString().Trim()));
                 //pag.AppendChild(elemento(xml, "tPag", p.tipoPgto.codFormaPgtoNFCe.ToString("00")));
                 detPag.AppendChild(elemento(xml, "tPag", pagamento.CodigoNFCe.ToString("00")));
+
+
+                //if (pagamento.CodigoNFCe.Equals(99))
+                //{
+                //    detPag.AppendChild(elemento(xml, "xPag", "Cartão alimentação"));
+                //}
+
                 detPag.AppendChild(elemento(xml, "vPag", pagamento.ValorPago.ToString("######0.00").Replace(",", ".")));
+
+                if (pagamento.CodigoNFCe.Equals(3) || pagamento.CodigoNFCe.Equals(4))
+                {
+                    XmlNode card = xml.CreateElement("card");
+                    detPag.AppendChild(card);
+
+                    card.AppendChild(elemento(xml, "tpIntegra", "2"));
+                }
             }
 
             //pag.AppendChild(elemento(xml, "tPag", "01"));
@@ -411,7 +426,7 @@ namespace ProjetoPDVServico
             ide.AppendChild(elemento(xml, "nNF", p.NFiscal.ToString()));
 
 
-            ide.AppendChild(elemento(xml, "dhEmi", p.DataDigitacao.ToString("yyyy-MM-dd") + "T" + DateTime.Now.ToString("HH:mm:ss-03:00")));
+            ide.AppendChild(elemento(xml, "dhEmi", p.DataDigitacao.ToString("yyyy-MM-dd") + "T" + DateTime.Now.ToString("HH:mm:ss") + ControleFiscal.GetInstance.TZD));
             //ide.AppendChild(elemento(xml, "dhSaiEnt", p.datanfiscal.ToString("yyyy-MM-dd'T'HH:mm:ss'-02:00'")));
 
 

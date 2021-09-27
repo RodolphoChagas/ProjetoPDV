@@ -56,7 +56,7 @@ namespace ProjetoPDVDao
         {
             try
             {
-                return (new PetaPoco.Database("stringConexao")).Query<Produto>("SELECT * FROM Produto WHERE " + condicao + " ORDER BY Descricao").ToList();
+                return (new PetaPoco.Database("stringConexao")).Query<Produto>("SELECT * FROM Produto WHERE " + condicao + " AND status = 0 ORDER BY Descricao").ToList();
             }
             catch (Exception)
             {
@@ -68,7 +68,7 @@ namespace ProjetoPDVDao
         {
             try
             {
-                return (new PetaPoco.Database("stringConexao")).Query<Produto>("SELECT * FROM Produto WHERE Categoria_id=@0 ORDER BY Descricao", categoriaId).ToList();
+                return (new PetaPoco.Database("stringConexao")).Query<Produto>("SELECT * FROM Produto WHERE Categoria_id=@0 AND Produto.status = 0 ORDER BY Descricao", categoriaId).ToList();
             }
             catch (Exception)
             {

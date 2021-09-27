@@ -11,7 +11,7 @@ namespace ProjetoPDVModel
     public class Email
     {
 
-        public void Email_ConferenciaCaixa(List<PedidoItem> lstProdutosdoMes, Caixa caixa, decimal totalDinheiroDoDia, decimal totalDebitoDoDia, decimal totalCreditoDoDia, decimal totalOutrosDoDia, List<Pedido> pedidosDoMes, int countPedidosDoDia) //, Movimentacao movimentacao)
+        public void Email_ConferenciaCaixa(List<PedidoItem> lstProdutosdoMes, Caixa caixa, decimal totalDinheiroDoDia, decimal totalDebitoDoDia, decimal totalCreditoDoDia, decimal totalOutrosDoDia, decimal totalIfoodDoDia, decimal totalPixDoDia , List<Pedido> pedidosDoMes, int countPedidosDoDia) //, Movimentacao movimentacao)
         {
 
             MailMessage mail = new MailMessage();
@@ -96,6 +96,8 @@ namespace ProjetoPDVModel
                 var totalDebitoDoMes = 0m;
                 var totalCreditoDoMes = 0m;
                 var totalOutrosDoMes = 0m;
+                var totalIfoodDoMes = 0m;
+                var totalPixDoMes = 0m;
 
                 var countPedidosDoMes = 0;
 
@@ -107,25 +109,31 @@ namespace ProjetoPDVModel
                         {
                             if (pagamento.CodigoNFCe.Equals(1))
                                 totalDinheiroDoMes += (pagamento.ValorPago - pedido.Troco);
-                            else if (pagamento.CodigoNFCe.Equals(3))
+                            else if (pagamento.CodigoNFCe.Equals(3) && (pagamento.Descricao != "iFood"))
                                 totalCreditoDoMes += pagamento.ValorPago;
                             else if (pagamento.CodigoNFCe.Equals(4))
                                 totalDebitoDoMes += pagamento.ValorPago;
                             else if (pagamento.CodigoNFCe.Equals(99))
                                 totalOutrosDoMes += pagamento.ValorPago;
+                            else if (pagamento.CodigoNFCe.Equals(17))
+                                totalPixDoMes += pagamento.ValorPago;
+                            else if (pagamento.Descricao.Equals("iFood"))
+                                totalIfoodDoMes += pagamento.ValorPago;
 
                             countPedidosDoMes += 1;
                         }
                     }
                 }
 
-                var totalDoMes = (totalDinheiroDoMes + totalDebitoDoMes + totalCreditoDoMes + totalOutrosDoMes);
-                var totalDoDia = (totalDinheiroDoDia + totalDebitoDoDia + totalCreditoDoDia + totalOutrosDoDia);
+                var totalDoMes = (totalDinheiroDoMes + totalDebitoDoMes + totalCreditoDoMes + totalOutrosDoMes + totalIfoodDoMes + totalPixDoMes);
+                var totalDoDia = (totalDinheiroDoDia + totalDebitoDoDia + totalCreditoDoDia + totalOutrosDoDia + totalIfoodDoDia + totalPixDoDia);
 
                 total.Append("<tr bgcolor='#eeeee8'><td>Dinheiro</td><td><center>" + totalDinheiroDoDia.ToString("0.00") + "</center></td><td><center>" + totalDinheiroDoMes.ToString("0.00") + "</center></td><td><center>" + Math.Round(((totalDinheiroDoMes * 100) / totalDoMes), 2) + "% </center></td></tr>");
                 total.Append("<tr bgcolor='#eeeee8'><td>Cartão de Débito</td><td><center>" + totalDebitoDoDia.ToString("0.00") + "</center></td><td><center>" + totalDebitoDoMes.ToString("0.00") + "</center></td><td><center>" + Math.Round(((totalDebitoDoMes * 100) / totalDoMes), 2) + "% </center></td></tr>");
                 total.Append("<tr bgcolor='#eeeee8'><td>Cartão de Crédito</td><td><center>" + totalCreditoDoDia.ToString("0.00") + "</center></td><td><center>" + totalCreditoDoMes.ToString("0.00") + "</center></td><td><center>" + Math.Round(((totalCreditoDoMes * 100) / totalDoMes), 2) + "% </center></td></tr>");
                 total.Append("<tr bgcolor='#eeeee8'><td>Outros</td><td><center>" + totalOutrosDoDia.ToString("0.00") + "</center></td><td><center>" + totalOutrosDoMes.ToString("0.00") + "</center></td><td><center>" + Math.Round(((totalOutrosDoMes * 100) / totalDoMes), 2) + "% </center></td></tr>");
+                total.Append("<tr bgcolor='#eeeee8'><td>iFood</td><td><center>" + totalIfoodDoDia.ToString("0.00") + "</center></td><td><center>" + totalIfoodDoMes.ToString("0.00") + "</center></td><td><center>" + Math.Round(((totalIfoodDoMes * 100) / totalDoMes), 2) + "% </center></td></tr>");
+                total.Append("<tr bgcolor='#eeeee8'><td>iFood</td><td><center>" + totalPixDoDia.ToString("0.00") + "</center></td><td><center>" + totalPixDoMes.ToString("0.00") + "</center></td><td><center>" + Math.Round(((totalPixDoMes * 100) / totalDoMes), 2) + "% </center></td></tr>");
 
                 total.Append("<tr bgcolor='#eeeee8'><td><b>Total</b></td><td><b><center>" + totalDoDia + "</center></b></td><td><b><center>" + totalDoMes.ToString("0.00") + "</center></b></td><td><b><center>100 %</center></b></td></tr>");
                 total.Append("<tr bgcolor='#eeeee8'><td><b>Ticket Médio</b></td><td><b><center>" + (totalDoDia / countPedidosDoDia).ToString("0.00") + "</center></b></td><td><b><center>" + (totalDoMes / countPedidosDoMes).ToString("0.00") + "</center></b></td><td><b><center>---</center></b></td></tr>");
@@ -139,7 +147,7 @@ namespace ProjetoPDVModel
 
 
                 var fromAddress = new MailAddress("programacao@impetus.com.br", "Succo (Fechamento de Caixa)");
-                //var toAddress = new MailAddress("rodolphochagas@hotmail.com", "Rodolpho");
+                var toAddress = new MailAddress("ingrid@impetus.com.br", "Ingrid Ney");
                 const string fromPassword = "impetus456";
                 const string subject = "Relatório de fechamento e conferência de caixa";
                 string body = cabecalho.ToString();
@@ -159,7 +167,7 @@ namespace ProjetoPDVModel
                 {
                     message.To.Add(new MailAddress("ingrid@impetus.com.br", "Ingrid Ney"));
                     message.To.Add(new MailAddress("marcelo.fargnoli@globo.com", "Marcelo"));
-                    message.To.Add(new MailAddress("rodolphochagas@hotmail.com", "Rodolpho"));
+                    message.To.Add(new MailAddress("ingrid@impetus.com.br", "Ingrid Ney"));
                     message.From = fromAddress;
 
                     smtp.Send(message);

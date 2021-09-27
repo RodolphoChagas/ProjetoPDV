@@ -272,5 +272,51 @@ namespace ProjetoPDVUtil
 
             return true;
         }
+
+
+
+
+        public static bool isSangriaAcrescimo(bool isSangria, DateTime data, decimal valor, string observacao)
+        {
+
+            var valorDesconto = 0;
+
+            var descricao = "SANGRIA";
+
+            if (!isSangria)
+                descricao = "ACRÉSCIMO";
+
+            try
+            {
+
+                //CADA LINHA DO CUPOM CONTEM 50 COLUNAS COM LETRA NORMAL
+
+                MP2032.BematechTX("\x1B\x61\x1"); //Centraliza
+
+                //Informações do Cabeçalho
+                MP2032.FormataTX(descricao + "\n", 2, 0, 0, 0, 1);
+                MP2032.FormataTX("Data da operação: " + data.ToString() + "\n\n", 2, 0, 0, 0, 0);
+                MP2032.FormataTX("\n\n\n", 2, 0, 0, 0, 0);
+
+  
+
+                //Informações de Totais do DANFE NFC-e
+                MP2032.FormataTX("VALOR TOTAL R$" + valor.ToString("######0.00").Replace(".", ",").PadLeft(36, ' '), 2, 0, 0, 0, 1);
+                MP2032.FormataTX("Observação: " + observacao.PadLeft(38, ' '), 2, 0, 0, 0, 1);
+
+                MP2032.FormataTX("\n\n", 2, 0, 0, 0, 0);
+
+                //Corta o papel parcialmente
+                MP2032.AcionaGuilhotina(0);
+                MP2032.FechaPorta();
+
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }

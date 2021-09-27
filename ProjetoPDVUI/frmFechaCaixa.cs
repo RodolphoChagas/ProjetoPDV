@@ -20,7 +20,7 @@ namespace ProjetoPDVUI
         private readonly int _countPedidosDoDia;
 
 
-        public frmFechaCaixa(decimal saldoInicial, decimal totalDoDia, decimal totalDinheiro, decimal totalCredito, decimal totalDebito, decimal totalOutros, decimal totalSangria, decimal totalSaldoFinal, int countPedidosDoDia)
+        public frmFechaCaixa(decimal saldoInicial, decimal totalDoDia, decimal totalDinheiro, decimal totalCredito, decimal totalDebito, decimal totalOutros, decimal totalIfood, decimal totalPix, decimal totalSangria, decimal totalSaldoFinal, int countPedidosDoDia)
         {
             InitializeComponent();
             
@@ -29,6 +29,9 @@ namespace ProjetoPDVUI
             txtDebito.Text = totalDebito.ToString("0.00");
             txtCredito.Text = totalCredito.ToString("0.00");
             txtOutros.Text = totalOutros.ToString("0.00");
+            txtIfood.Text = totalIfood.ToString("0.00");
+            txtPix.Text = totalPix.ToString("0.00");
+
 
             txtSaldoInicial.Text = saldoInicial.ToString("0.00");
             txtVendaDinheiro.Text = totalDinheiro.ToString("0.00");
@@ -47,6 +50,8 @@ namespace ProjetoPDVUI
             txtDebito.ReadOnly = true;
             txtSangrias.ReadOnly = true;
             txtOutros.ReadOnly = true;
+            txtIfood.ReadOnly = true;
+            txtPix.ReadOnly = true;
 
             txtSaldoInicial.ReadOnly = true;
             txtVendaDinheiro.ReadOnly = true;
@@ -136,7 +141,7 @@ namespace ProjetoPDVUI
                 }
 
 
-                (new Email()).Email_ConferenciaCaixa(produtosVendidosDoMes, caixa, Convert.ToDecimal(txtDinheiro.Text), Convert.ToDecimal(txtDebito.Text), Convert.ToDecimal(txtCredito.Text), Convert.ToDecimal(txtOutros.Text), pedidosDoMes, _countPedidosDoDia);
+                (new Email()).Email_ConferenciaCaixa(produtosVendidosDoMes, caixa, Convert.ToDecimal(txtDinheiro.Text), Convert.ToDecimal(txtDebito.Text), Convert.ToDecimal(txtCredito.Text), Convert.ToDecimal(txtOutros.Text), Convert.ToDecimal(txtIfood.Text), Convert.ToDecimal(txtPix.Text), pedidosDoMes, _countPedidosDoDia);
             }
             catch (Exception ex)
             {

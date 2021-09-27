@@ -58,6 +58,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.radDescPorcentagem = new System.Windows.Forms.RadioButton();
+            this.radDescDinheiro = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtDesconto = new System.Windows.Forms.TextBox();
             this.txtClienteCpf = new System.Windows.Forms.TextBox();
             this.btnBuscaCliente = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
@@ -81,6 +85,7 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlTipoPagamento
@@ -125,6 +130,7 @@
             this.button2.Text = "[D] Débito";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -440,10 +446,60 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.radDescPorcentagem);
+            this.panel6.Controls.Add(this.radDescDinheiro);
+            this.panel6.Controls.Add(this.label4);
+            this.panel6.Controls.Add(this.txtDesconto);
             this.panel6.Location = new System.Drawing.Point(-3, 141);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(462, 219);
             this.panel6.TabIndex = 212;
+            // 
+            // radDescPorcentagem
+            // 
+            this.radDescPorcentagem.AutoSize = true;
+            this.radDescPorcentagem.Location = new System.Drawing.Point(198, 14);
+            this.radDescPorcentagem.Name = "radDescPorcentagem";
+            this.radDescPorcentagem.Size = new System.Drawing.Size(88, 17);
+            this.radDescPorcentagem.TabIndex = 44;
+            this.radDescPorcentagem.TabStop = true;
+            this.radDescPorcentagem.Text = "Porcentagem";
+            this.radDescPorcentagem.UseVisualStyleBackColor = true;
+            this.radDescPorcentagem.CheckedChanged += new System.EventHandler(this.radDescPorcentagem_CheckedChanged);
+            // 
+            // radDescDinheiro
+            // 
+            this.radDescDinheiro.AutoSize = true;
+            this.radDescDinheiro.Checked = true;
+            this.radDescDinheiro.Location = new System.Drawing.Point(126, 14);
+            this.radDescDinheiro.Name = "radDescDinheiro";
+            this.radDescDinheiro.Size = new System.Drawing.Size(64, 17);
+            this.radDescDinheiro.TabIndex = 43;
+            this.radDescDinheiro.TabStop = true;
+            this.radDescDinheiro.Text = "Dinheiro";
+            this.radDescDinheiro.UseVisualStyleBackColor = true;
+            this.radDescDinheiro.CheckedChanged += new System.EventHandler(this.radDescDinheiro_CheckedChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(16, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(99, 16);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "Desconto em";
+            // 
+            // txtDesconto
+            // 
+            this.txtDesconto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDesconto.Location = new System.Drawing.Point(19, 42);
+            this.txtDesconto.Name = "txtDesconto";
+            this.txtDesconto.Size = new System.Drawing.Size(77, 22);
+            this.txtDesconto.TabIndex = 38;
+            this.txtDesconto.Text = "0,00";
+            this.txtDesconto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDesconto.TextChanged += new System.EventHandler(this.txtDesconto_TextChanged);
             // 
             // txtClienteCpf
             // 
@@ -613,6 +669,8 @@
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -662,5 +720,9 @@
         internal System.Windows.Forms.ColumnHeader Observacao;
         private System.Windows.Forms.ColumnHeader estornar;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TextBox txtDesconto;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RadioButton radDescPorcentagem;
+        private System.Windows.Forms.RadioButton radDescDinheiro;
     }
 }

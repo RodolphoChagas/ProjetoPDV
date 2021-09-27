@@ -37,11 +37,29 @@ namespace ProjetoPDVUI
                 return;
             }
 
+
             var db = new Database("stringConexao");
 
             try
             {
                 db.BeginTransaction();
+
+
+                var operacaoId = 0;
+
+                foreach (Control control in panelOperacao.Controls)
+                {
+                    if (control is RadioButton radio)
+                    {
+                        if (radio.Checked == true)
+                        {
+                            operacaoId = Convert.ToInt32(radio.Tag);
+                        }
+                    }
+                }
+
+
+
 
                 Pedido = new Pedido()
                 {
@@ -49,15 +67,30 @@ namespace ProjetoPDVUI
                     ValorPedido = Convert.ToDecimal(txtValor.Text),
                     StatusPedido = "F",
                     UsuarioId = Usuario.getInstance.codUser,
-                    OperacaoId = _operacaoId
+                    OperacaoId = operacaoId
                 };
 
                 Pedido.NumDoc = Convert.ToInt32(db.Insert(Pedido));
 
                 db.Insert("Movdb_Pagamento_Rel", new { numdoc = Pedido.NumDoc, pagamento_id = 1, valor = Convert.ToDecimal(txtValor.Text), observacao = txtObservacao.Text });
-
+                
 
                 db.CompleteTransaction();
+
+
+                if (ckImprimir.Checked)
+                {
+                    VerificaStatusImpressora();
+
+                    bool isSangria = false;
+
+                    if (operacaoId == 2)
+                        isSangria = true;
+
+                    if (!ImpressoraBematech.isSangriaAcrescimo(isSangria, Pedido.DataDigitacao, Pedido.ValorPedido, txtObservacao.Text.Trim()))
+                        MessageBox.Show("Houve um erro inesperado ao se comunicar com a IMPRESSOSA BEMATECH, verifique-a por favor!");
+
+                }
             }
             catch (Exception ex)
             {
@@ -66,6 +99,34 @@ namespace ProjetoPDVUI
             }
 
             Close();
+        }
+
+
+
+        private void VerificaStatusImpressora()
+        {
+            MP2032.ConfiguraModeloImpressora(7); // Bematech MP-4200 TH
+            MP2032.IniciaPorta("USB");
+
+            var codigoRetorno = MP2032.Le_Status();
+            if (codigoRetorno == 0)
+            {
+                MessageBox.Show("Erro ao se comunicar com a Impressora Bematech MP-4200 TH, verifique por favor.", "** ATENÇÃO **", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (codigoRetorno == 5)
+            {
+                MessageBox.Show("Impressora com pouco papel, verifique por favor.", "** ATENÇÃO **", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else if (codigoRetorno == 9)
+            {
+                MessageBox.Show("Impressora com a tampa aberta, verifique por favor.", "** ATENÇÃO **", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MP2032.FechaPorta();
+                return;
+            }
+            else if (codigoRetorno == 32)
+            {
+                MessageBox.Show("Impressora sem papel, verifique por favor.", "** ATENÇÃO **", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
         private void txtValor_TextChanged(object sender, EventArgs e)

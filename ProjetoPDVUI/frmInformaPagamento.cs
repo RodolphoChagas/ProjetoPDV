@@ -2,7 +2,7 @@
 using ProjetoPDVModel;
 using ProjetoPDVUtil;
 using System;
-
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace ProjetoPDVUI
@@ -22,10 +22,10 @@ namespace ProjetoPDVUI
         {
             InitializeComponent();
 
-            radVisa.Image = System.Drawing.Bitmap.FromFile(@"Imagens\visa50.png");
-            radMastercard.Image = System.Drawing.Bitmap.FromFile(@"Imagens\mastercard50.png");
-            radOutros.Image = System.Drawing.Bitmap.FromFile(@"Imagens\Outros.png");
-            radAmex.Image = System.Drawing.Bitmap.FromFile(@"Imagens\amex50.png");
+            radVisa.Image = Bitmap.FromFile(@"Imagens\visa50.png");
+            radMastercard.Image = Bitmap.FromFile(@"Imagens\mastercard50.png");
+            radOutros.Image = Bitmap.FromFile(@"Imagens\Outros.png");
+            radIfood.Image = Bitmap.FromFile(@"Imagens\ifood-logo-16.png");
 
 
             _valorDoPedido = valorFaltando;
@@ -66,16 +66,18 @@ namespace ProjetoPDVUI
                     pnlBandeiras.Enabled = false;
                     break;
                 case "CREDITO":
-                    radAmex.Tag = 4;
+                    radIfood.Tag = 16;
                     radMastercard.Tag = 7;
                     radVisa.Tag = 2;
-                    radOutros.Tag = 6;
+                    radOutros.Tag = 17;
+                    radPix.Tag = 19;
                     break;
                 case "DEBITO":
-                    radAmex.Tag = 4;
+                    radIfood.Tag = 16;
                     radMastercard.Tag = 10;
                     radVisa.Tag = 11;
-                    radOutros.Tag = 6;
+                    radOutros.Tag = 17;
+                    radPix.Tag = 19;
                     break;
             }
 
@@ -232,6 +234,21 @@ namespace ProjetoPDVUI
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlBandeiras_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void radOutros_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }
